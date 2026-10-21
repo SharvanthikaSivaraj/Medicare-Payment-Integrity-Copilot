@@ -11,7 +11,10 @@
       "type": "indication",
       "source_quote": "Moderate to severe chronic neck or low back pain, predominantly axial, that causes functional deficit measured on pain or disability scale 6",
       "keep": true,
-      "reviewer_note": "kept as drafted"
+      "reviewer_note": "kept as drafted",
+      "question": "Does the note document moderate to severe chronic neck or low back pain, mainly axial, that limits function?",
+      "met_if": "yes",
+      "if_not_mentioned": "not_documented"
     },
     {
       "id": "FAC-C02",
@@ -19,7 +22,10 @@
       "type": "indication",
       "source_quote": "Pain that has been present for a minimum of 3 months with documented failure to respond to noninvasive conservative care management (as tolerated)",
       "keep": true,
-      "reviewer_note": "kept as drafted"
+      "reviewer_note": "kept as drafted",
+      "question": "Does the note document pain for at least 3 months AND failure of conservative care (for example physical therapy or medications)?",
+      "met_if": "yes",
+      "if_not_mentioned": "not_documented"
     },
     {
       "id": "FAC-C03",
@@ -27,7 +33,10 @@
       "type": "indication",
       "source_quote": "Absence of untreated radiculopathy or neurogenic claudication (except for radiculopathy caused by facet joint synovial cyst)",
       "keep": true,
-      "reviewer_note": "kept as drafted"
+      "reviewer_note": "kept as drafted",
+      "question": "Does the note document untreated radiculopathy or neurogenic claudication?",
+      "met_if": "no",
+      "if_not_mentioned": "not_documented"
     },
     {
       "id": "FAC-C04",
@@ -59,7 +68,10 @@
       "type": "indication",
       "source_quote": "There is no non-facet pathology per clinical assessment or radiology studies that could explain the source of the patient’s pain, including but not limited to fracture, tumor, infection, or significant deformity.",
       "keep": true,
-      "reviewer_note": "kept as drafted"
+      "reviewer_note": "kept as drafted",
+      "question": "Does the note document another cause for the pain besides the facet joints (for example fracture, tumor, infection or significant deformity)?",
+      "met_if": "no",
+      "if_not_mentioned": "met"
     },
     {
       "id": "FAC-C08",
@@ -140,7 +152,10 @@
       "source_quote": "Facet joint interventions done without CT or fluoroscopic guidance are considered not medically reasonable and necessary.",
       "keep": true,
       "reviewer_note": "reworded as a checkable statement",
-      "original_criterion": "Facet joint interventions done without CT or fluoroscopic guidance are considered not medically reasonable and necessary."
+      "original_criterion": "Facet joint interventions done without CT or fluoroscopic guidance are considered not medically reasonable and necessary.",
+      "question": "Was the procedure performed under fluoroscopic or CT guidance?",
+      "met_if": "yes",
+      "if_not_mentioned": "not_documented"
     },
     {
       "id": "FAC-C18",
@@ -150,7 +165,10 @@
       "keep": true,
       "reviewer_note": "reworded as a checkable statement; quote replaced with the matching policy sentence",
       "original_criterion": "The use of Moderate or Deep Sedation, General Anesthesia, and Monitored Anesthesia Care (MAC) is not considered medically reasonable and necessary during facet injections.",
-      "original_quote": "The use of Moderate Sedation for RFA or cyst rupture/aspiration will be considered in individual cases with documentation of medical necessity such as a longstanding well-documented history of inability to cooperate, medical conditions that would prohibit performance of the procedure, or inability to remain motionless. Patient anxiety or preference alone is not sufficient justification."
+      "original_quote": "The use of Moderate Sedation for RFA or cyst rupture/aspiration will be considered in individual cases with documentation of medical necessity such as a longstanding well-documented history of inability to cooperate, medical conditions that would prohibit performance of the procedure, or inability to remain motionless. Patient anxiety or preference alone is not sufficient justification.",
+      "question": "Was moderate or deep sedation (including IV conscious sedation), general anesthesia or monitored anesthesia care (MAC) used?",
+      "met_if": "no",
+      "if_not_mentioned": "met"
     },
     {
       "id": "FAC-C19",
@@ -255,7 +273,10 @@
       "source_quote": "The scales used for measurement of pain and/or disability must be documented in the medical record.",
       "keep": true,
       "reviewer_note": "reworded as a checkable statement",
-      "original_criterion": "The scales used for measurement of pain and/or disability must be documented in the medical record."
+      "original_criterion": "The scales used for measurement of pain and/or disability must be documented in the medical record.",
+      "question": "Does the note record a pain or disability score (for example 7/10, NRS, VAS or ODI)?",
+      "met_if": "yes",
+      "if_not_mentioned": "not_documented"
     },
     {
       "id": "FAC-C32",
@@ -357,5 +378,6 @@
       "FAC-C31"
     ],
     "explanation": "Policy indications are joined with AND; image guidance, no routine sedation and documented pain scales are also required."
-  }
+  },
+  "question_note": "Each kept criterion is asked as a yes/no question about the note. 'met_if' says which answer satisfies the criterion; 'if_not_mentioned' is used when the note is silent (silence is fine for prohibitions such as sedation, but not for required findings)."
 }

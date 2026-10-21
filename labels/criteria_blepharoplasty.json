@@ -43,7 +43,10 @@
       "type": "indication",
       "source_quote": "A functional deficit or disturbance secondary to eyelid and/or brow abnormalities must be documented, such as interference with vision or visual field that impacts an activity of daily living (such as difficulty reading or driving).",
       "keep": true,
-      "reviewer_note": "kept as drafted"
+      "reviewer_note": "kept as drafted",
+      "question": "Does the note document a functional problem caused by the eyelids or brows, such as blocked vision or visual field affecting daily activities (for example reading or driving)?",
+      "met_if": "yes",
+      "if_not_mentioned": "not_documented"
     },
     {
       "id": "BLE-C06",
@@ -52,7 +55,10 @@
       "source_quote": "A margin reflex distance (MRD sometimes referred to as MRD1)) of 2.0 mm or less.",
       "keep": true,
       "reviewer_note": "reworded as a checkable statement",
-      "original_criterion": "For Blepharoptosis Repair - A margin reflex distance (MRD sometimes referred to as MRD1)) of 2.0 mm or less."
+      "original_criterion": "For Blepharoptosis Repair - A margin reflex distance (MRD sometimes referred to as MRD1)) of 2.0 mm or less.",
+      "question": "Does the note document ptosis with a margin reflex distance (MRD1) of 2.0 mm or less?",
+      "met_if": "yes",
+      "if_not_mentioned": "not_documented"
     },
     {
       "id": "BLE-C07",
@@ -61,7 +67,10 @@
       "source_quote": "Redundant eyelid tissue hanging over the eyelid margin resulting in pseudoptosis where the “pseudo” margin produces a central “pseudo-MRD” of 2.0 mm or less, or",
       "keep": true,
       "reviewer_note": "reworded as a checkable statement",
-      "original_criterion": "For Upper Blepharoplasty and/or Brow Ptosis Repair - Redundant eyelid tissue hanging over the eyelid margin resulting in pseudoptosis where the “pseudo” margin produces a central “pseudo-MRD” of 2.0 mm or less, or"
+      "original_criterion": "For Upper Blepharoplasty and/or Brow Ptosis Repair - Redundant eyelid tissue hanging over the eyelid margin resulting in pseudoptosis where the “pseudo” margin produces a central “pseudo-MRD” of 2.0 mm or less, or",
+      "question": "Does the note document excess upper eyelid skin hanging over the lid margin (pseudoptosis) to within 2.0 mm of the pupil center?",
+      "met_if": "yes",
+      "if_not_mentioned": "not_documented"
     },
     {
       "id": "BLE-C08",
@@ -70,7 +79,10 @@
       "source_quote": "Redundant eyelid tissue predominantly medially or laterally that clearly obscures the line of sight in corresponding gaze.",
       "keep": true,
       "reviewer_note": "reworded as a checkable statement",
-      "original_criterion": "For Upper Blepharoplasty and/or Brow Ptosis Repair - Redundant eyelid tissue predominantly medially or laterally that clearly obscures the line of sight in corresponding gaze."
+      "original_criterion": "For Upper Blepharoplasty and/or Brow Ptosis Repair - Redundant eyelid tissue predominantly medially or laterally that clearly obscures the line of sight in corresponding gaze.",
+      "question": "Does the note document excess eyelid tissue that blocks the line of sight?",
+      "met_if": "yes",
+      "if_not_mentioned": "not_documented"
     },
     {
       "id": "BLE-C09",
@@ -87,7 +99,10 @@
       "source_quote": "The “physical signs” documented in Section A must be clearly represented in photographs of the structures of interest and the photographs must be of good quality and of sufficient size and detail as to make those structures easily recognizable.",
       "keep": true,
       "reviewer_note": "reworded as a checkable statement",
-      "original_criterion": "The “physical signs” documented in Section A must be clearly represented in photographs of the structures of interest and the photographs must be of good quality and of sufficient size and detail as to make those structures easily recognizable."
+      "original_criterion": "The “physical signs” documented in Section A must be clearly represented in photographs of the structures of interest and the photographs must be of good quality and of sufficient size and detail as to make those structures easily recognizable.",
+      "question": "Does the note mention photographs documenting the eyelid findings?",
+      "met_if": "yes",
+      "if_not_mentioned": "not_documented"
     },
     {
       "id": "BLE-C11",
@@ -127,7 +142,10 @@
       "type": "indication",
       "source_quote": "If the eyelid obstructs the pupil, there is a clear-cut indication for surgery.",
       "keep": true,
-      "reviewer_note": "kept as drafted"
+      "reviewer_note": "kept as drafted",
+      "question": "Does the note document that the eyelid covers or obstructs the pupil?",
+      "met_if": "yes",
+      "if_not_mentioned": "not_documented"
     },
     {
       "id": "BLE-C16",
@@ -168,5 +186,6 @@
       ]
     ],
     "explanation": "A documented functional deficit and photographs are required, plus at least one physical sign (MRD of 2.0 mm or less, pseudoptosis, tissue obscuring the line of sight, or lid obstructing the pupil)."
-  }
+  },
+  "question_note": "Each kept criterion is asked as a yes/no question about the note. 'met_if' says which answer satisfies the criterion; 'if_not_mentioned' is used when the note is silent (silence is fine for prohibitions such as sedation, but not for required findings)."
 }

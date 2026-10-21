@@ -5,7 +5,7 @@ Other long text columns (not used): cms_cov_policy, source_info, associated_info
 
 | procedure | LCD | title | other versions | policy chars | procedure notes |
 | --- | --- | --- | --- | --- | --- |
-| Cataract surgery | L34203 | Cataract Surgery in Adults | 7 | 9,166 | 24 |
+| Cataract surgery | L34203 | Cataract Surgery in Adults | 7 | 9,166 | 23 |
 | Facet joint injection / medial branch block / radiofrequency ablation | L33930 | Facet Joint Interventions for Pain Management | 8 | 23,805 | 8 |
 | Epidural steroid injection | L39240 | Epidural Steroid Injections for Pain Management | 6 | 19,010 | 20 |
 | Blepharoplasty (eyelid surgery) | L34194 | Blepharoplasty,  Eyelid Surgery, and Brow Lift | 5 | 11,663 | 8 |

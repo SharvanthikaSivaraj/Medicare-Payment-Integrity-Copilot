@@ -30,6 +30,8 @@ PROCEDURES = {
         "name": "Cataract surgery",
         "must": ["cataract"],
         "any": ["extraction", "phaco", "intraocular lens", "iol", "cataract surgery"],
+        # YAG capsulotomy is a laser treatment AFTER cataract surgery; this policy does not apply
+        "exclude": ["capsulotomy", "yag", "capsular membrane"],
     },
     "facet_joint": {
         "name": "Facet joint injection / medial branch block / radiofrequency ablation",
@@ -118,6 +120,7 @@ def build_notes() -> pd.DataFrame:
     for topic, rule in PROCEDURES.items():
         mask = title.apply(lambda t: any(w in t for w in rule["must"]))
         mask &= title.apply(lambda t: any(w in t for w in rule["any"]))
+        mask &= ~title.apply(lambda t: any(w in t for w in rule.get("exclude", [])))
         mask &= notes["transcription"].str.len() >= MIN_NOTE_CHARS
         picked.append(notes[mask].assign(topic=topic))
 

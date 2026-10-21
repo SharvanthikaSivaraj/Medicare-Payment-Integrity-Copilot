@@ -11,7 +11,10 @@
       "type": "indication",
       "source_quote": "Cataract causing symptomatic (i.e., causing the patient to seek medical attention) impairment of visual function not correctable with a tolerable change in glasses or contact lenses resulting in the patient's inability to function satisfactorily while performing Activities of Daily Life including, but not limited to reading, viewing television, driving, or meeting vocational or recreational needs.",
       "keep": true,
-      "reviewer_note": "kept as drafted"
+      "reviewer_note": "kept as drafted",
+      "question": "Does the note document a cataract that impairs vision and limits daily activities (for example reading, driving, TV) despite glasses or contact lenses?",
+      "met_if": "yes",
+      "if_not_mentioned": "not_documented"
     },
     {
       "id": "CAT-C02",
@@ -19,7 +22,10 @@
       "type": "indication",
       "source_quote": "Concomitant intraocular disease (e.g., diabetic retinopathy or intraocular tumor) requiring monitoring or treatment that is prevented by the presence of cataract.",
       "keep": true,
-      "reviewer_note": "kept as drafted"
+      "reviewer_note": "kept as drafted",
+      "question": "Does the note document another eye disease (for example diabetic retinopathy or an intraocular tumor) whose monitoring or treatment is prevented by the cataract?",
+      "met_if": "yes",
+      "if_not_mentioned": "not_documented"
     },
     {
       "id": "CAT-C03",
@@ -27,7 +33,10 @@
       "type": "indication",
       "source_quote": "Lens-induced disease threatening vision or ocular health (including, but not limited to, phacomorphic or phacolytic glaucoma).",
       "keep": true,
-      "reviewer_note": "kept as drafted"
+      "reviewer_note": "kept as drafted",
+      "question": "Does the note document lens-induced disease threatening vision or eye health (for example phacomorphic or phacolytic glaucoma)?",
+      "met_if": "yes",
+      "if_not_mentioned": "not_documented"
     },
     {
       "id": "CAT-C04",
@@ -35,7 +44,10 @@
       "type": "indication",
       "source_quote": "High probability of accelerating cataract development as a result of a concomitant or subsequent procedure (e.g., pars plana vitrectomy, iridocyclectomy, procedure for ocular trauma) and treatments such as external beam irradiation.",
       "keep": true,
-      "reviewer_note": "kept as drafted"
+      "reviewer_note": "kept as drafted",
+      "question": "Does the note document that another procedure or treatment (for example vitrectomy or radiation) is likely to speed up the cataract?",
+      "met_if": "yes",
+      "if_not_mentioned": "not_documented"
     },
     {
       "id": "CAT-C05",
@@ -43,7 +55,10 @@
       "type": "indication",
       "source_quote": "Cataract interfering with the performance of vitreoretinal surgery.",
       "keep": true,
-      "reviewer_note": "kept as drafted"
+      "reviewer_note": "kept as drafted",
+      "question": "Does the note document that the cataract interferes with vitreoretinal surgery?",
+      "met_if": "yes",
+      "if_not_mentioned": "not_documented"
     },
     {
       "id": "CAT-C06",
@@ -89,5 +104,6 @@
       ]
     ],
     "explanation": "Policy: covered when one (or more) of the listed conditions is documented."
-  }
+  },
+  "question_note": "Each kept criterion is asked as a yes/no question about the note. 'met_if' says which answer satisfies the criterion; 'if_not_mentioned' is used when the note is silent (silence is fine for prohibitions such as sedation, but not for required findings)."
 }

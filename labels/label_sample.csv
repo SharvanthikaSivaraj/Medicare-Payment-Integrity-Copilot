@@ -1,0 +1,121 @@
+key,note_id,topic,criterion_id,question
+EPI-043|EPI-C16,EPI-043,epidural_steroid_injection,EPI-C16,Were transforaminal injections performed at more than 2 nerve root levels in this session?
+EPI-046|EPI-C03,EPI-046,epidural_steroid_injection,EPI-C03,Does the note document pain for at least 4 weeks AND failure or intolerance of conservative care (for example physical therapy or medications)?
+CAT-003|CAT-C02,CAT-003,cataract,CAT-C02,Does the note document another eye disease (for example diabetic retinopathy or an intraocular tumor) whose monitoring or treatment is prevented by the cataract?
+BLE-056|BLE-C05,BLE-056,blepharoplasty,BLE-C05,"Does the note document a functional problem caused by the eyelids or brows, such as blocked vision or visual field affecting daily activities (for example reading or driving)?"
+FAC-027|FAC-C18,FAC-027,facet_joint,FAC-C18,"Was moderate or deep sedation (including IV conscious sedation), general anesthesia or monitored anesthesia care (MAC) used?"
+EPI-046|EPI-C16,EPI-046,epidural_steroid_injection,EPI-C16,Were transforaminal injections performed at more than 2 nerve root levels in this session?
+EPI-049|EPI-C12,EPI-049,epidural_steroid_injection,EPI-C12,"Was moderate or deep sedation (including IV conscious sedation), general anesthesia or monitored anesthesia care (MAC) used?"
+CAT-010|CAT-C05,CAT-010,cataract,CAT-C05,Does the note document that the cataract interferes with vitreoretinal surgery?
+EPI-042|EPI-C04,EPI-042,epidural_steroid_injection,EPI-C04,Was the injection performed under fluoroscopic or CT guidance with contrast?
+CAT-018|CAT-C04,CAT-018,cataract,CAT-C04,Does the note document that another procedure or treatment (for example vitrectomy or radiation) is likely to speed up the cataract?
+CAT-018|CAT-C05,CAT-018,cataract,CAT-C05,Does the note document that the cataract interferes with vitreoretinal surgery?
+FAC-024|FAC-C18,FAC-024,facet_joint,FAC-C18,"Was moderate or deep sedation (including IV conscious sedation), general anesthesia or monitored anesthesia care (MAC) used?"
+CAT-011|CAT-C05,CAT-011,cataract,CAT-C05,Does the note document that the cataract interferes with vitreoretinal surgery?
+EPI-038|EPI-C15,EPI-038,epidural_steroid_injection,EPI-C15,"Was more than one spinal region (cervical, thoracic, lumbar) injected in this session?"
+EPI-040|EPI-C04,EPI-040,epidural_steroid_injection,EPI-C04,Was the injection performed under fluoroscopic or CT guidance with contrast?
+EPI-040|EPI-C08,EPI-040,epidural_steroid_injection,EPI-C08,"Does the note record a pain or disability score (for example 7/10, NRS, VAS or ODI)?"
+CAT-002|CAT-C01,CAT-002,cataract,CAT-C01,"Does the note document a cataract that impairs vision and limits daily activities (for example reading, driving, TV) despite glasses or contact lenses?"
+CAT-000|CAT-C05,CAT-000,cataract,CAT-C05,Does the note document that the cataract interferes with vitreoretinal surgery?
+FAC-025|FAC-C03,FAC-025,facet_joint,FAC-C03,Does the note document untreated radiculopathy or neurogenic claudication?
+CAT-021|CAT-C01,CAT-021,cataract,CAT-C01,"Does the note document a cataract that impairs vision and limits daily activities (for example reading, driving, TV) despite glasses or contact lenses?"
+EPI-033|EPI-C08,EPI-033,epidural_steroid_injection,EPI-C08,"Does the note record a pain or disability score (for example 7/10, NRS, VAS or ODI)?"
+EPI-044|EPI-C12,EPI-044,epidural_steroid_injection,EPI-C12,"Was moderate or deep sedation (including IV conscious sedation), general anesthesia or monitored anesthesia care (MAC) used?"
+EPI-032|EPI-C01,EPI-032,epidural_steroid_injection,EPI-C01,"Does the note document radiculopathy, radicular pain or neurogenic claudication (for example from disc herniation or spinal stenosis), post-laminectomy syndrome, or acute herpes zoster pain?"
+EPI-050|EPI-C15,EPI-050,epidural_steroid_injection,EPI-C15,"Was more than one spinal region (cervical, thoracic, lumbar) injected in this session?"
+EPI-042|EPI-C12,EPI-042,epidural_steroid_injection,EPI-C12,"Was moderate or deep sedation (including IV conscious sedation), general anesthesia or monitored anesthesia care (MAC) used?"
+CAT-012|CAT-C05,CAT-012,cataract,CAT-C05,Does the note document that the cataract interferes with vitreoretinal surgery?
+CAT-013|CAT-C04,CAT-013,cataract,CAT-C04,Does the note document that another procedure or treatment (for example vitrectomy or radiation) is likely to speed up the cataract?
+BLE-057|BLE-C07,BLE-057,blepharoplasty,BLE-C07,Does the note document excess upper eyelid skin hanging over the lid margin (pseudoptosis) to within 2.0 mm of the pupil center?
+CAT-006|CAT-C03,CAT-006,cataract,CAT-C03,Does the note document lens-induced disease threatening vision or eye health (for example phacomorphic or phacolytic glaucoma)?
+EPI-034|EPI-C04,EPI-034,epidural_steroid_injection,EPI-C04,Was the injection performed under fluoroscopic or CT guidance with contrast?
+FAC-026|FAC-C18,FAC-026,facet_joint,FAC-C18,"Was moderate or deep sedation (including IV conscious sedation), general anesthesia or monitored anesthesia care (MAC) used?"
+EPI-039|EPI-C15,EPI-039,epidural_steroid_injection,EPI-C15,"Was more than one spinal region (cervical, thoracic, lumbar) injected in this session?"
+CAT-020|CAT-C05,CAT-020,cataract,CAT-C05,Does the note document that the cataract interferes with vitreoretinal surgery?
+EPI-031|EPI-C02,EPI-031,epidural_steroid_injection,EPI-C02,Does the note document that the radicular pain or claudication significantly affects quality of life or function?
+BLE-057|BLE-C08,BLE-057,blepharoplasty,BLE-C08,Does the note document excess eyelid tissue that blocks the line of sight?
+EPI-036|EPI-C03,EPI-036,epidural_steroid_injection,EPI-C03,Does the note document pain for at least 4 weeks AND failure or intolerance of conservative care (for example physical therapy or medications)?
+EPI-031|EPI-C12,EPI-031,epidural_steroid_injection,EPI-C12,"Was moderate or deep sedation (including IV conscious sedation), general anesthesia or monitored anesthesia care (MAC) used?"
+BLE-053|BLE-C05,BLE-053,blepharoplasty,BLE-C05,"Does the note document a functional problem caused by the eyelids or brows, such as blocked vision or visual field affecting daily activities (for example reading or driving)?"
+EPI-043|EPI-C15,EPI-043,epidural_steroid_injection,EPI-C15,"Was more than one spinal region (cervical, thoracic, lumbar) injected in this session?"
+CAT-009|CAT-C05,CAT-009,cataract,CAT-C05,Does the note document that the cataract interferes with vitreoretinal surgery?
+EPI-034|EPI-C03,EPI-034,epidural_steroid_injection,EPI-C03,Does the note document pain for at least 4 weeks AND failure or intolerance of conservative care (for example physical therapy or medications)?
+FAC-027|FAC-C03,FAC-027,facet_joint,FAC-C03,Does the note document untreated radiculopathy or neurogenic claudication?
+CAT-022|CAT-C04,CAT-022,cataract,CAT-C04,Does the note document that another procedure or treatment (for example vitrectomy or radiation) is likely to speed up the cataract?
+FAC-029|FAC-C18,FAC-029,facet_joint,FAC-C18,"Was moderate or deep sedation (including IV conscious sedation), general anesthesia or monitored anesthesia care (MAC) used?"
+BLE-055|BLE-C07,BLE-055,blepharoplasty,BLE-C07,Does the note document excess upper eyelid skin hanging over the lid margin (pseudoptosis) to within 2.0 mm of the pupil center?
+CAT-019|CAT-C02,CAT-019,cataract,CAT-C02,Does the note document another eye disease (for example diabetic retinopathy or an intraocular tumor) whose monitoring or treatment is prevented by the cataract?
+CAT-003|CAT-C03,CAT-003,cataract,CAT-C03,Does the note document lens-induced disease threatening vision or eye health (for example phacomorphic or phacolytic glaucoma)?
+CAT-016|CAT-C01,CAT-016,cataract,CAT-C01,"Does the note document a cataract that impairs vision and limits daily activities (for example reading, driving, TV) despite glasses or contact lenses?"
+EPI-038|EPI-C12,EPI-038,epidural_steroid_injection,EPI-C12,"Was moderate or deep sedation (including IV conscious sedation), general anesthesia or monitored anesthesia care (MAC) used?"
+EPI-041|EPI-C02,EPI-041,epidural_steroid_injection,EPI-C02,Does the note document that the radicular pain or claudication significantly affects quality of life or function?
+EPI-048|EPI-C12,EPI-048,epidural_steroid_injection,EPI-C12,"Was moderate or deep sedation (including IV conscious sedation), general anesthesia or monitored anesthesia care (MAC) used?"
+EPI-038|EPI-C03,EPI-038,epidural_steroid_injection,EPI-C03,Does the note document pain for at least 4 weeks AND failure or intolerance of conservative care (for example physical therapy or medications)?
+CAT-013|CAT-C05,CAT-013,cataract,CAT-C05,Does the note document that the cataract interferes with vitreoretinal surgery?
+EPI-043|EPI-C03,EPI-043,epidural_steroid_injection,EPI-C03,Does the note document pain for at least 4 weeks AND failure or intolerance of conservative care (for example physical therapy or medications)?
+EPI-037|EPI-C12,EPI-037,epidural_steroid_injection,EPI-C12,"Was moderate or deep sedation (including IV conscious sedation), general anesthesia or monitored anesthesia care (MAC) used?"
+BLE-051|BLE-C10,BLE-051,blepharoplasty,BLE-C10,Does the note mention photographs documenting the eyelid findings?
+CAT-006|CAT-C05,CAT-006,cataract,CAT-C05,Does the note document that the cataract interferes with vitreoretinal surgery?
+EPI-043|EPI-C12,EPI-043,epidural_steroid_injection,EPI-C12,"Was moderate or deep sedation (including IV conscious sedation), general anesthesia or monitored anesthesia care (MAC) used?"
+EPI-037|EPI-C01,EPI-037,epidural_steroid_injection,EPI-C01,"Does the note document radiculopathy, radicular pain or neurogenic claudication (for example from disc herniation or spinal stenosis), post-laminectomy syndrome, or acute herpes zoster pain?"
+BLE-056|BLE-C15,BLE-056,blepharoplasty,BLE-C15,Does the note document that the eyelid covers or obstructs the pupil?
+FAC-026|FAC-C02,FAC-026,facet_joint,FAC-C02,Does the note document pain for at least 3 months AND failure of conservative care (for example physical therapy or medications)?
+FAC-028|FAC-C18,FAC-028,facet_joint,FAC-C18,"Was moderate or deep sedation (including IV conscious sedation), general anesthesia or monitored anesthesia care (MAC) used?"
+CAT-019|CAT-C05,CAT-019,cataract,CAT-C05,Does the note document that the cataract interferes with vitreoretinal surgery?
+CAT-008|CAT-C03,CAT-008,cataract,CAT-C03,Does the note document lens-induced disease threatening vision or eye health (for example phacomorphic or phacolytic glaucoma)?
+EPI-047|EPI-C12,EPI-047,epidural_steroid_injection,EPI-C12,"Was moderate or deep sedation (including IV conscious sedation), general anesthesia or monitored anesthesia care (MAC) used?"
+CAT-007|CAT-C05,CAT-007,cataract,CAT-C05,Does the note document that the cataract interferes with vitreoretinal surgery?
+CAT-013|CAT-C01,CAT-013,cataract,CAT-C01,"Does the note document a cataract that impairs vision and limits daily activities (for example reading, driving, TV) despite glasses or contact lenses?"
+CAT-014|CAT-C05,CAT-014,cataract,CAT-C05,Does the note document that the cataract interferes with vitreoretinal surgery?
+CAT-002|CAT-C05,CAT-002,cataract,CAT-C05,Does the note document that the cataract interferes with vitreoretinal surgery?
+CAT-016|CAT-C05,CAT-016,cataract,CAT-C05,Does the note document that the cataract interferes with vitreoretinal surgery?
+EPI-040|EPI-C15,EPI-040,epidural_steroid_injection,EPI-C15,"Was more than one spinal region (cervical, thoracic, lumbar) injected in this session?"
+FAC-026|FAC-C17,FAC-026,facet_joint,FAC-C17,Was the procedure performed under fluoroscopic or CT guidance?
+CAT-003|CAT-C05,CAT-003,cataract,CAT-C05,Does the note document that the cataract interferes with vitreoretinal surgery?
+CAT-001|CAT-C03,CAT-001,cataract,CAT-C03,Does the note document lens-induced disease threatening vision or eye health (for example phacomorphic or phacolytic glaucoma)?
+CAT-019|CAT-C01,CAT-019,cataract,CAT-C01,"Does the note document a cataract that impairs vision and limits daily activities (for example reading, driving, TV) despite glasses or contact lenses?"
+BLE-053|BLE-C06,BLE-053,blepharoplasty,BLE-C06,Does the note document ptosis with a margin reflex distance (MRD1) of 2.0 mm or less?
+BLE-053|BLE-C15,BLE-053,blepharoplasty,BLE-C15,Does the note document that the eyelid covers or obstructs the pupil?
+EPI-048|EPI-C15,EPI-048,epidural_steroid_injection,EPI-C15,"Was more than one spinal region (cervical, thoracic, lumbar) injected in this session?"
+CAT-011|CAT-C03,CAT-011,cataract,CAT-C03,Does the note document lens-induced disease threatening vision or eye health (for example phacomorphic or phacolytic glaucoma)?
+EPI-045|EPI-C16,EPI-045,epidural_steroid_injection,EPI-C16,Were transforaminal injections performed at more than 2 nerve root levels in this session?
+BLE-055|BLE-C10,BLE-055,blepharoplasty,BLE-C10,Does the note mention photographs documenting the eyelid findings?
+CAT-002|CAT-C03,CAT-002,cataract,CAT-C03,Does the note document lens-induced disease threatening vision or eye health (for example phacomorphic or phacolytic glaucoma)?
+EPI-043|EPI-C02,EPI-043,epidural_steroid_injection,EPI-C02,Does the note document that the radicular pain or claudication significantly affects quality of life or function?
+CAT-014|CAT-C03,CAT-014,cataract,CAT-C03,Does the note document lens-induced disease threatening vision or eye health (for example phacomorphic or phacolytic glaucoma)?
+EPI-035|EPI-C04,EPI-035,epidural_steroid_injection,EPI-C04,Was the injection performed under fluoroscopic or CT guidance with contrast?
+EPI-042|EPI-C08,EPI-042,epidural_steroid_injection,EPI-C08,"Does the note record a pain or disability score (for example 7/10, NRS, VAS or ODI)?"
+EPI-035|EPI-C08,EPI-035,epidural_steroid_injection,EPI-C08,"Does the note record a pain or disability score (for example 7/10, NRS, VAS or ODI)?"
+EPI-047|EPI-C15,EPI-047,epidural_steroid_injection,EPI-C15,"Was more than one spinal region (cervical, thoracic, lumbar) injected in this session?"
+BLE-058|BLE-C06,BLE-058,blepharoplasty,BLE-C06,Does the note document ptosis with a margin reflex distance (MRD1) of 2.0 mm or less?
+BLE-057|BLE-C10,BLE-057,blepharoplasty,BLE-C10,Does the note mention photographs documenting the eyelid findings?
+CAT-019|CAT-C03,CAT-019,cataract,CAT-C03,Does the note document lens-induced disease threatening vision or eye health (for example phacomorphic or phacolytic glaucoma)?
+EPI-032|EPI-C03,EPI-032,epidural_steroid_injection,EPI-C03,Does the note document pain for at least 4 weeks AND failure or intolerance of conservative care (for example physical therapy or medications)?
+BLE-052|BLE-C07,BLE-052,blepharoplasty,BLE-C07,Does the note document excess upper eyelid skin hanging over the lid margin (pseudoptosis) to within 2.0 mm of the pupil center?
+FAC-029|FAC-C07,FAC-029,facet_joint,FAC-C07,"Does the note document another cause for the pain besides the facet joints (for example fracture, tumor, infection or significant deformity)?"
+FAC-027|FAC-C02,FAC-027,facet_joint,FAC-C02,Does the note document pain for at least 3 months AND failure of conservative care (for example physical therapy or medications)?
+FAC-023|FAC-C03,FAC-023,facet_joint,FAC-C03,Does the note document untreated radiculopathy or neurogenic claudication?
+EPI-040|EPI-C03,EPI-040,epidural_steroid_injection,EPI-C03,Does the note document pain for at least 4 weeks AND failure or intolerance of conservative care (for example physical therapy or medications)?
+EPI-031|EPI-C08,EPI-031,epidural_steroid_injection,EPI-C08,"Does the note record a pain or disability score (for example 7/10, NRS, VAS or ODI)?"
+CAT-000|CAT-C04,CAT-000,cataract,CAT-C04,Does the note document that another procedure or treatment (for example vitrectomy or radiation) is likely to speed up the cataract?
+CAT-001|CAT-C02,CAT-001,cataract,CAT-C02,Does the note document another eye disease (for example diabetic retinopathy or an intraocular tumor) whose monitoring or treatment is prevented by the cataract?
+BLE-051|BLE-C05,BLE-051,blepharoplasty,BLE-C05,"Does the note document a functional problem caused by the eyelids or brows, such as blocked vision or visual field affecting daily activities (for example reading or driving)?"
+CAT-020|CAT-C04,CAT-020,cataract,CAT-C04,Does the note document that another procedure or treatment (for example vitrectomy or radiation) is likely to speed up the cataract?
+CAT-001|CAT-C05,CAT-001,cataract,CAT-C05,Does the note document that the cataract interferes with vitreoretinal surgery?
+FAC-026|FAC-C07,FAC-026,facet_joint,FAC-C07,"Does the note document another cause for the pain besides the facet joints (for example fracture, tumor, infection or significant deformity)?"
+BLE-055|BLE-C06,BLE-055,blepharoplasty,BLE-C06,Does the note document ptosis with a margin reflex distance (MRD1) of 2.0 mm or less?
+CAT-010|CAT-C03,CAT-010,cataract,CAT-C03,Does the note document lens-induced disease threatening vision or eye health (for example phacomorphic or phacolytic glaucoma)?
+EPI-047|EPI-C04,EPI-047,epidural_steroid_injection,EPI-C04,Was the injection performed under fluoroscopic or CT guidance with contrast?
+FAC-023|FAC-C02,FAC-023,facet_joint,FAC-C02,Does the note document pain for at least 3 months AND failure of conservative care (for example physical therapy or medications)?
+FAC-028|FAC-C07,FAC-028,facet_joint,FAC-C07,"Does the note document another cause for the pain besides the facet joints (for example fracture, tumor, infection or significant deformity)?"
+EPI-038|EPI-C08,EPI-038,epidural_steroid_injection,EPI-C08,"Does the note record a pain or disability score (for example 7/10, NRS, VAS or ODI)?"
+BLE-054|BLE-C10,BLE-054,blepharoplasty,BLE-C10,Does the note mention photographs documenting the eyelid findings?
+CAT-015|CAT-C03,CAT-015,cataract,CAT-C03,Does the note document lens-induced disease threatening vision or eye health (for example phacomorphic or phacolytic glaucoma)?
+CAT-020|CAT-C02,CAT-020,cataract,CAT-C02,Does the note document another eye disease (for example diabetic retinopathy or an intraocular tumor) whose monitoring or treatment is prevented by the cataract?
+EPI-038|EPI-C16,EPI-038,epidural_steroid_injection,EPI-C16,Were transforaminal injections performed at more than 2 nerve root levels in this session?
+CAT-021|CAT-C03,CAT-021,cataract,CAT-C03,Does the note document lens-induced disease threatening vision or eye health (for example phacomorphic or phacolytic glaucoma)?
+CAT-004|CAT-C04,CAT-004,cataract,CAT-C04,Does the note document that another procedure or treatment (for example vitrectomy or radiation) is likely to speed up the cataract?
+CAT-013|CAT-C02,CAT-013,cataract,CAT-C02,Does the note document another eye disease (for example diabetic retinopathy or an intraocular tumor) whose monitoring or treatment is prevented by the cataract?
+EPI-046|EPI-C08,EPI-046,epidural_steroid_injection,EPI-C08,"Does the note record a pain or disability score (for example 7/10, NRS, VAS or ODI)?"
+EPI-049|EPI-C01,EPI-049,epidural_steroid_injection,EPI-C01,"Does the note document radiculopathy, radicular pain or neurogenic claudication (for example from disc herniation or spinal stenosis), post-laminectomy syndrome, or acute herpes zoster pain?"
+CAT-011|CAT-C02,CAT-011,cataract,CAT-C02,Does the note document another eye disease (for example diabetic retinopathy or an intraocular tumor) whose monitoring or treatment is prevented by the cataract?
