@@ -46,15 +46,15 @@ Test set: 1,791,280 providers, 287 positives (1 in 6,241). Random ranking would 
 
 | rank | specialty | state | later excluded (fraud) | top reason |
 | --- | --- | --- | --- | --- |
-| 1 | Family Practice | TX | no | g_b_benes = -0.734 (top 99% of peers) |
-| 2 | Internal Medicine | OH | no | b_charge_to_allowed = 1.68 (top 76% of peers) |
-| 3 | Family Practice | KY | no | g_d_cost_per_bene = -0.701 (top 96% of peers) |
-| 4 | Internal Medicine | OH | no | g_b_benes = -0.493 (top 96% of peers) |
-| 5 | Physician Assistant | MI | yes | d_lis_share = 0.922 (top 2% of peers) |
-| 6 | Internal Medicine | NC | no | g_b_benes = -0.844 (top 99% of peers) |
-| 7 | Family Practice | OH | no | g_d_cost_per_bene = -0.655 (top 94% of peers) |
-| 8 | Internal Medicine | NC | no | g_d_cost_per_bene = -0.743 (top 95% of peers) |
-| 9 | Internal Medicine | LA | no | b_benes = 17 (top 98% of peers) |
-| 10 | Internal Medicine | IL | no | b_benes = 23 (top 96% of peers) |
+| 1 | Family Practice | TX | no | g_b_benes = -73% vs last year (bottom 1% of peers) |
+| 2 | Internal Medicine | OH | no | b_charge_to_allowed = 1.68 (bottom 24% of peers) |
+| 3 | Family Practice | KY | no | g_d_cost_per_bene = -70% vs last year (bottom 4% of peers) |
+| 4 | Internal Medicine | OH | no | g_b_benes = -49% vs last year (bottom 4% of peers) |
+| 5 | Physician Assistant | MI | yes | d_lis_share = 92% (top 2% of peers) |
+| 6 | Internal Medicine | NC | no | g_b_benes = -84% vs last year (bottom 1% of peers) |
+| 7 | Family Practice | OH | no | g_d_cost_per_bene = -66% vs last year (bottom 6% of peers) |
+| 8 | Internal Medicine | NC | no | g_d_cost_per_bene = -74% vs last year (bottom 5% of peers) |
+| 9 | Internal Medicine | LA | no | b_benes = 17 (bottom 2% of peers) |
+| 10 | Internal Medicine | IL | no | b_benes = 23 (bottom 4% of peers) |
 
 NPIs are kept out of this report on purpose; they are in the risk-score file.
