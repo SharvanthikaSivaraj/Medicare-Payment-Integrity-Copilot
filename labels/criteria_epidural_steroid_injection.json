@@ -3,15 +3,16 @@
   "lcd_id": "39240",
   "title": "Epidural Steroid Injections for Pain Management",
   "model": "llama3.2:3b",
-  "status": "draft - review by hand",
+  "status": "reviewed by Sharvanthikha",
   "criteria": [
     {
       "id": "EPI-C01",
-      "criterion": "History, physical examination, and concordant radiological image-based diagnostic testing supporting one of the following 5 :",
+      "criterion": "History, exam and imaging support radiculopathy, radicular pain or neurogenic claudication (e.g., disc herniation or stenosis), post-laminectomy syndrome, or acute herpes zoster pain",
       "type": "indication",
       "source_quote": "History, physical examination, and concordant radiological image-based diagnostic testing supporting one of the following 5 :",
       "keep": true,
-      "reviewer_note": ""
+      "reviewer_note": "reworded as a checkable statement",
+      "original_criterion": "History, physical examination, and concordant radiological image-based diagnostic testing supporting one of the following 5 :"
     },
     {
       "id": "EPI-C02",
@@ -19,7 +20,7 @@
       "type": "indication",
       "source_quote": "Radiculopathy, radicular pain and/or neurogenic claudication is severe enough to greatly impact quality of life or function.",
       "keep": true,
-      "reviewer_note": ""
+      "reviewer_note": "kept as drafted"
     },
     {
       "id": "EPI-C03",
@@ -27,215 +28,236 @@
       "type": "indication",
       "source_quote": "Pain duration of at least four (4) weeks, and the inability to tolerate noninvasive conservative care or medical documentation of failure to respond to four (4) weeks of noninvasive conservative care or acute herpes zoster refractory to conservative management where a four (4) week wait is not required.",
       "keep": true,
-      "reviewer_note": ""
+      "reviewer_note": "kept as drafted"
     },
     {
       "id": "EPI-C04",
-      "criterion": "The ESIs must be performed under CT or fluoroscopy image guidance with contrast, 10 unless the patient has a documented allergy to low molecular weight nonionic contrast.",
+      "criterion": "The injection was performed under CT or fluoroscopic guidance with contrast (unless contrast allergy is documented)",
       "type": "limitation",
       "source_quote": "The ESIs must be performed under CT or fluoroscopy image guidance with contrast, 10 unless the patient has a documented allergy to low molecular weight nonionic contrast.",
       "keep": true,
-      "reviewer_note": ""
+      "reviewer_note": "reworded as a checkable statement",
+      "original_criterion": "The ESIs must be performed under CT or fluoroscopy image guidance with contrast, 10 unless the patient has a documented allergy to low molecular weight nonionic contrast."
     },
     {
       "id": "EPI-C05",
       "criterion": "It is medically reasonable and necessary to perform TFESIs bilaterally only when clinically indicated.",
       "type": "limitation",
       "source_quote": "It is medically reasonable and necessary to perform TFESIs bilaterally only when clinically indicated.",
-      "keep": true,
-      "reviewer_note": ""
+      "keep": false,
+      "reviewer_note": "bilateral TFESI is allowed when clinically indicated; too vague or general to check"
     },
     {
       "id": "EPI-C06",
       "criterion": "Repeat ESI when the first injection directly and significantly provided improvement of the condition being treated may be considered medically reasonable and necessary when the medical record documents a minimum of consistent 50% improvement in pain for at least three (3) months or at least 50% consistent improvement in the ability to perform previously painful movements and ADLs as compared to baseline measurement using the same scale .",
       "type": "limitation",
       "source_quote": "6. Repeat ESI when the first injection directly and significantly provided improvement of the condition being treated may be considered medically reasonable and necessary when the medical record documents a minimum of consistent 50% improvement in pain for at least three (3) months or at least 50% consistent improvement in the ability to perform previously painful movements and ADLs as compared to baseline measurement using the same scale .",
-      "keep": true,
-      "reviewer_note": ""
+      "keep": false,
+      "reviewer_note": "applies to repeat/therapeutic/RFA procedures, not a single procedure note in this evaluation"
     },
     {
       "id": "EPI-C07",
       "criterion": "If a patient fails to respond well to the initial ESI, a repeat ESI after 14 days can be performed, using a different approach, level and/or medication if appropriate, with the rationale and medical necessity for the second ESI documented in the medical record.",
       "type": "limitation",
       "source_quote": "If a patient fails to respond well to the initial ESI, a repeat ESI after 14 days can be performed, using a different approach, level and/or medication if appropriate, with the rationale and medical necessity for the second ESI documented in the medical record.",
-      "keep": true,
-      "reviewer_note": ""
+      "keep": false,
+      "reviewer_note": "applies to repeat/therapeutic/RFA procedures, not a single procedure note in this evaluation"
     },
     {
       "id": "EPI-C08",
-      "criterion": "The scales used to measure of pain and/or disability must be documented in the medical record. Acceptable scales include but are not limited to: verbal rating scales, Numerical Rating Scale (NRS) and Visual Analog Scale (VAS) for pain assessment, and Pain Disability Assessment Scale (PDAS), Oswestry Disability Index (ODI), Oswestry Low Back Pain Disability Questionnaire (OSW), Quebec Back Pain Disability Scale (QUE), Roland Morris Pain Scale, Back Pain Functional Scale (BPFS), and the PROMIS profile domains to assess function.",
+      "criterion": "A pain and/or disability scale is documented (e.g., NRS, VAS, ODI)",
       "type": "documentation",
-      "source_quote": "9. Patient\u2019s should be part of an active rehabilitation program, home exercise program or functional restoration program. 10,12",
+      "source_quote": "The scales used to measure of pain and/or disability must be documented in the medical record.",
       "keep": true,
-      "reviewer_note": ""
+      "reviewer_note": "reworded as a checkable statement; quote replaced with the matching policy sentence",
+      "original_criterion": "The scales used to measure of pain and/or disability must be documented in the medical record. Acceptable scales include but are not limited to: verbal rating scales, Numerical Rating Scale (NRS) and Visual Analog Scale (VAS) for pain assessment, and Pain Disability Assessment Scale (PDAS), Oswestry Disability Index (ODI), Oswestry Low Back Pain Disability Questionnaire (OSW), Quebec Back Pain Disability Scale (QUE), Roland Morris Pain Scale, Back Pain Functional Scale (BPFS), and the PROMIS profile domains to assess function.",
+      "original_quote": "9. Patient’s should be part of an active rehabilitation program, home exercise program or functional restoration program. 10,12"
     },
     {
       "id": "EPI-C09",
       "criterion": "An initial injection of contrast is required to confirm epidural placement, unless the patient has a contraindication to contrast. The subsequent epidural steroid injections should include corticosteroids and may be combined with anesthetics or saline.",
       "type": "limitation",
       "source_quote": "7. An initial injection of contrast is required to confirm epidural placement, unless the patient has a contraindication to contrast. The subsequent epidural steroid injections should include corticosteroids and may be combined with anesthetics or saline.",
-      "keep": true,
-      "reviewer_note": ""
+      "keep": false,
+      "reviewer_note": "covered by EPI-C04 (contrast use)"
     },
     {
       "id": "EPI-C10",
       "criterion": "ESIs should be performed in conjunction with conservative treatments.",
       "type": "limitation",
       "source_quote": "8. The ESIs should be performed in conjunction with conservative treatments.",
-      "keep": true,
-      "reviewer_note": ""
+      "keep": false,
+      "reviewer_note": "too vague or general to check"
     },
     {
       "id": "EPI-C11",
       "criterion": "It is not considered medically reasonable and necessary to perform multiple blocks (ESI, sympathetic blocks, facet blocks, trigger point injections etc.) during the same session as ESIs, with the exception of a facet synovial cyst and ESI performed in the same session.",
       "type": "limitation",
       "source_quote": "3. It is not considered medically reasonable and necessary to perform multiple blocks (ESI, sympathetic blocks, facet blocks, trigger point injections etc.) during the same session as ESIs, with the exception of a facet synovial cyst and ESI performed in the same session.",
-      "keep": true,
-      "reviewer_note": ""
+      "keep": false,
+      "reviewer_note": "about other blocks in the same session; rare in these notes"
     },
     {
       "id": "EPI-C12",
-      "criterion": "Use of Moderate or Deep Sedation, General Anesthesia, and Monitored Anesthesia Care (MAC) is usually unnecessary or rarely indicated for these procedures and therefore not considered medically reasonable and necessary.",
+      "criterion": "No moderate/deep sedation, general anesthesia or MAC was used",
       "type": "limitation",
       "source_quote": "4. Use of Moderate or Deep Sedation, General Anesthesia, and Monitored Anesthesia Care (MAC) is usually unnecessary or rarely indicated for these procedures and therefore not considered medically reasonable and necessary.",
       "keep": true,
-      "reviewer_note": ""
+      "reviewer_note": "reworded as a checkable statement",
+      "original_criterion": "Use of Moderate or Deep Sedation, General Anesthesia, and Monitored Anesthesia Care (MAC) is usually unnecessary or rarely indicated for these procedures and therefore not considered medically reasonable and necessary."
     },
     {
       "id": "EPI-C13",
-      "criterion": "ESIs to treat non-specific low back pain (LBP), axial spine pain, complex regional pain syndrome, widespread diffuse pain, pain from neuropathy from other causes, cervicogenic headaches are considered investigational and therefore are not considered medically reasonable and necessary.",
+      "criterion": "The pain being treated is not non-specific low back pain or axial-only spine pain",
       "type": "limitation",
       "source_quote": "5. ESIs to treat non-specific low back pain (LBP), axial spine pain, complex regional pain syndrome, widespread diffuse pain, pain from neuropathy from other causes, cervicogenic headaches are considered investigational and therefore are not considered medically reasonable and necessary.",
       "keep": true,
-      "reviewer_note": ""
+      "reviewer_note": "reworded as a checkable statement",
+      "original_criterion": "ESIs to treat non-specific low back pain (LBP), axial spine pain, complex regional pain syndrome, widespread diffuse pain, pain from neuropathy from other causes, cervicogenic headaches are considered investigational and therefore are not considered medically reasonable and necessary."
     },
     {
       "id": "EPI-C14",
       "criterion": "ESIs are limited to a maximum of four (4) sessions per spinal region in a rolling twelve (12) month period.",
       "type": "limitation",
       "source_quote": "6. ESIs are limited to a maximum of four (4) sessions per spinal region in a rolling twelve (12) month period.",
-      "keep": true,
-      "reviewer_note": ""
+      "keep": false,
+      "reviewer_note": "needs claims history across visits; cannot be checked from a single procedure note"
     },
     {
       "id": "EPI-C15",
-      "criterion": "It is not considered medically reasonable and necessary for more than one spinal region to be injected in the same session.",
+      "criterion": "Only one spinal region was injected in the session",
       "type": "limitation",
       "source_quote": "7. It is not considered medically reasonable and necessary for more than one spinal region to be injected in the same session.",
       "keep": true,
-      "reviewer_note": ""
+      "reviewer_note": "reworded as a checkable statement",
+      "original_criterion": "It is not considered medically reasonable and necessary for more than one spinal region to be injected in the same session."
     },
     {
       "id": "EPI-C16",
-      "criterion": "It is not considered medically reasonable and necessary to perform TFESIs at more than two (2) nerve root levels during the same session.",
+      "criterion": "Transforaminal injections were done at no more than 2 nerve root levels in the session",
       "type": "limitation",
       "source_quote": "8. It is not considered medically reasonable and necessary to perform TFESIs at more than two (2) nerve root levels during the same session.",
       "keep": true,
-      "reviewer_note": ""
+      "reviewer_note": "reworded as a checkable statement",
+      "original_criterion": "It is not considered medically reasonable and necessary to perform TFESIs at more than two (2) nerve root levels during the same session."
     },
     {
       "id": "EPI-C17",
       "criterion": "It is not medically reasonable and necessary to perform CESIs or ILESIs bilaterally.",
       "type": "limitation",
       "source_quote": "10. It is not medically reasonable and necessary to perform CESIs or ILESIs bilaterally.",
-      "keep": true,
-      "reviewer_note": ""
+      "keep": false,
+      "reviewer_note": "rare in these notes"
     },
     {
       "id": "EPI-C18",
       "criterion": "It is not medically reasonable and necessary to prescribe a predetermined series of ESIs.",
       "type": "limitation",
       "source_quote": "11. It is not medically reasonable and necessary to prescribe a predetermined series of ESIs.",
-      "keep": true,
-      "reviewer_note": ""
+      "keep": false,
+      "reviewer_note": "needs claims history across visits; cannot be checked from a single procedure note"
     },
     {
       "id": "EPI-C19",
       "criterion": "Steroid dosing should be the lowest effective amount, it is recommended not to exceed 80 mg of triamcinolone, 12 mg of betamethasone, 15 mg of dexamethasone per session.",
       "type": "limitation",
       "source_quote": "12. Steroid dosing should be the lowest effective amount, it is recommended not to exceed 80 mg of triamcinolone, 12 mg of betamethasone, 15 mg of dexamethasone per session.",
-      "keep": true,
-      "reviewer_note": ""
+      "keep": false,
+      "reviewer_note": "dosing guidance (recommended, not required)"
     },
     {
       "id": "EPI-C20",
       "criterion": "It generally would not be considered medically reasonable and necessary for treatment with ESI to extend beyond 12 months.",
       "type": "limitation",
       "source_quote": "13. It generally would not be considered medically reasonable and necessary for treatment with ESI to extend beyond 12 months.",
-      "keep": true,
-      "reviewer_note": ""
+      "keep": false,
+      "reviewer_note": "needs claims history across visits; cannot be checked from a single procedure note"
     },
     {
       "id": "EPI-C21",
       "criterion": "Pain is severe enough to cause a significant degree of functional disability or vocational disability.",
       "type": "limitation",
       "source_quote": "Pain is severe enough to cause a significant degree of functional disability or vocational disability.",
-      "keep": true,
-      "reviewer_note": ""
+      "keep": false,
+      "reviewer_note": "covered by EPI-C02"
     },
     {
       "id": "EPI-C22",
       "criterion": "ESI provides at least 50% sustained improvement of pain and/or 50% objective improvement in function (using same scale as baseline).",
       "type": "limitation",
       "source_quote": "ESI provides at least 50% sustained improvement of pain and/or 50% objective improvement in function (using same scale as baseline).",
-      "keep": true,
-      "reviewer_note": ""
+      "keep": false,
+      "reviewer_note": "applies to repeat/therapeutic/RFA procedures, not a single procedure note in this evaluation"
     },
     {
       "id": "EPI-C23",
       "criterion": "The primary care provider must be notified regarding continuation of procedures and prolonged repeat steroid use.",
       "type": "documentation",
       "source_quote": "The primary care provider must be notified regarding continuation of procedures and prolonged repeat steroid use.",
-      "keep": true,
-      "reviewer_note": ""
+      "keep": false,
+      "reviewer_note": "applies to repeat/therapeutic/RFA procedures, not a single procedure note in this evaluation"
     },
     {
       "id": "EPI-C24",
       "criterion": "The patient must have radiculopathy",
       "type": "indication",
-      "source_quote": "Radiculopathy \u2013 Radiating neuropathic pain causally related to the spinal nerve root irritation, which extends distally, producing neuropathic pain in a myotomal or dermatomal pattern.",
-      "keep": true,
-      "reviewer_note": ""
+      "source_quote": "Radiculopathy – Radiating neuropathic pain causally related to the spinal nerve root irritation, which extends distally, producing neuropathic pain in a myotomal or dermatomal pattern.",
+      "keep": false,
+      "reviewer_note": "covered by EPI-C01"
     },
     {
       "id": "EPI-C25",
       "criterion": "The procedure must be performed under fluoroscopic guidance",
       "type": "limitation",
-      "source_quote": "Interlaminar epidural steroid injection (ILESI) \u2013 An injection of contrast (absent allergy to contrast), followed by the introduction of a corticosteroid and possibly a local anesthetic into the epidural space of the spine either through a paramedian or midline interlaminar approach under fluoroscopic guidance.",
-      "keep": true,
-      "reviewer_note": ""
+      "source_quote": "Interlaminar epidural steroid injection (ILESI) – An injection of contrast (absent allergy to contrast), followed by the introduction of a corticosteroid and possibly a local anesthetic into the epidural space of the spine either through a paramedian or midline interlaminar approach under fluoroscopic guidance.",
+      "keep": false,
+      "reviewer_note": "quote does not support the criterion (quote is a different sentence)"
     },
     {
       "id": "EPI-C26",
       "criterion": "The procedure must be performed by a physician",
       "type": "limitation",
       "source_quote": "The results of applying the GRADE system to clinical trial data are displayed in a table known as a GRADE profile.",
-      "keep": true,
-      "reviewer_note": ""
+      "keep": false,
+      "reviewer_note": "quote does not support the criterion (quote is a different sentence)"
     },
     {
       "id": "EPI-C27",
       "criterion": "The procedure must be documented in the medical record",
       "type": "documentation",
-      "source_quote": "Impairment \u2013 A significant deviation, loss, or loss of use of any body structure or body function in an individual with a health condition, disorder, or disease.",
-      "keep": true,
-      "reviewer_note": ""
+      "source_quote": "Impairment – A significant deviation, loss, or loss of use of any body structure or body function in an individual with a health condition, disorder, or disease.",
+      "keep": false,
+      "reviewer_note": "quote does not support the criterion (quote is a different sentence)"
     },
     {
       "id": "EPI-C28",
       "criterion": "The temporal definition of pain occurring during the six to twelve-week time period.",
       "type": "indication",
       "source_quote": "The temporal definition of pain occurring during the six to twelve-week time period.",
-      "keep": true,
-      "reviewer_note": ""
+      "keep": false,
+      "reviewer_note": "misread from the policy's definitions/glossary section; it describes a term, not a coverage requirement"
     },
     {
       "id": "EPI-C29",
       "criterion": "The temporal definition of pain occurring 12 weeks after the onset of the pain.",
       "type": "indication",
       "source_quote": "The temporal definition of pain occurring 12 weeks after the onset of the pain.",
-      "keep": true,
-      "reviewer_note": ""
+      "keep": false,
+      "reviewer_note": "misread from the policy's definitions/glossary section; it describes a term, not a coverage requirement"
     }
-  ]
+  ],
+  "decision_rule": {
+    "all_of": [
+      "EPI-C01",
+      "EPI-C02",
+      "EPI-C03",
+      "EPI-C04",
+      "EPI-C08",
+      "EPI-C12",
+      "EPI-C13",
+      "EPI-C15",
+      "EPI-C16"
+    ],
+    "explanation": "Policy indications are joined with AND; image guidance, no routine sedation, a documented pain scale and the session limits are also required."
+  }
 }

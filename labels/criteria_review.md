@@ -1,131 +1,178 @@
-# Coverage criteria for review
+# Coverage criteria review
 
-Drafted by a local SLM; every quote was verified to exist in the policy text.
-Review each item: edit the JSON file, set `keep` to false for wrong or irrelevant items, and fix wording if needed.
+The local SLM drafted the criteria; every quote was checked to exist in the policy text.
+This file records the **review**: which criteria are kept for checking notes, how they combine, and why the rest were dropped.
+Reviewer: reviewed by Sharvanthikha.
+
+## What the review found
+
+| problem | count | example |
+| --- | --- | --- |
+| Real quote, but taken from the definitions section and turned into a rule | 12 | FAC-C39 'patient must have radiculopathy' contradicts FAC-C03 |
+| Quote is real but supports a different statement | 7 | EPI-C26 'performed by a physician', quoted from a sentence about the GRADE system |
+| Needs a year of claims history, not checkable from one note | 6 | 'no more than 4 sessions per rolling 12 months' |
+
+A verified quote proves the text exists, not that the model understood it.
 
 ## Cataract surgery (L34203)
 
-2 parts read, 17 proposed, **8 rejected for quotes not found in the policy**, 0 duplicates removed, 9 kept.
+**Decision rule:** AT LEAST ONE of CAT-C01, CAT-C02, CAT-C03, CAT-C04, CAT-C05. Policy: covered when one (or more) of the listed conditions is documented.
 
-| id | type | criterion | quote from policy |
+Kept 5 of 9.
+
+| id | type | criterion | review |
 | --- | --- | --- | --- |
-| CAT-C01 | indication | Cataract causing symptomatic (i.e., causing the patient to seek medical attention) impairment of visual function not correctable with a tolerable change in glasses or contact lenses resulting in the patient's inability to function satisfactorily while performing Activities of Daily Life including, but not limited to reading, viewing television, driving, or meeting vocational or recreational needs. | Cataract causing symptomatic (i.e., causing the patient to seek medical attention) impairment of visual function not correctable with a tolerable change in glasses or contact lenses resulting in the patient's inability t |
-| CAT-C02 | indication | Concomitant intraocular disease (e.g., diabetic retinopathy or intraocular tumor) requiring monitoring or treatment that is prevented by the presence of cataract. | Concomitant intraocular disease (e.g., diabetic retinopathy or intraocular tumor) requiring monitoring or treatment that is prevented by the presence of cataract. |
-| CAT-C03 | indication | Lens-induced disease threatening vision or ocular health (including, but not limited to, phacomorphic or phacolytic glaucoma). | Lens-induced disease threatening vision or ocular health (including, but not limited to, phacomorphic or phacolytic glaucoma). |
-| CAT-C04 | indication | High probability of accelerating cataract development as a result of a concomitant or subsequent procedure (e.g., pars plana vitrectomy, iridocyclectomy, procedure for ocular trauma) and treatments such as external beam irradiation. | High probability of accelerating cataract development as a result of a concomitant or subsequent procedure (e.g., pars plana vitrectomy, iridocyclectomy, procedure for ocular trauma) and treatments such as external beam  |
-| CAT-C05 | indication | Cataract interfering with the performance of vitreoretinal surgery. | Cataract interfering with the performance of vitreoretinal surgery. |
-| CAT-C06 | limitation | Any circumstances not listed may be considered based on the standard of care and other factors related to medical necessity at redetermination. | Any circumstances not listed may be considered based on the standard of care and other factors related to medical necessity at redetermination. |
-| CAT-C07 | documentation | results and indications of medical necessity properly documented | and must have results and indications of medical necessity properly documented. |
-| CAT-C08 | limitation | the need to restore binocular vision and resolve anisometropia | the need to restore binocular vision and resolve anisometropia, |
-| CAT-C09 | documentation | medical necessity for each procedure to be performed | If the decision to perform cataract extraction in both eyes is made prior to the first (sequential) cataract extraction, the documentation must support the medical necessity for each procedure to be performed. |
+| CAT-C01 | indication | Cataract causing symptomatic (i.e., causing the patient to seek medical attention) impairment of visual function not correctable with a tolerable change in glasses or contact lenses resulting in the patient's inability to function satisfactorily while performing Activities of Daily Life including, but not limited to reading, viewing television, driving, or meeting vocational or recreational needs. | kept as drafted |
+| CAT-C02 | indication | Concomitant intraocular disease (e.g., diabetic retinopathy or intraocular tumor) requiring monitoring or treatment that is prevented by the presence of cataract. | kept as drafted |
+| CAT-C03 | indication | Lens-induced disease threatening vision or ocular health (including, but not limited to, phacomorphic or phacolytic glaucoma). | kept as drafted |
+| CAT-C04 | indication | High probability of accelerating cataract development as a result of a concomitant or subsequent procedure (e.g., pars plana vitrectomy, iridocyclectomy, procedure for ocular trauma) and treatments such as external beam irradiation. | kept as drafted |
+| CAT-C05 | indication | Cataract interfering with the performance of vitreoretinal surgery. | kept as drafted |
+
+<details><summary>Dropped items and reasons</summary>
+
+| id | drafted criterion | reason |
+| --- | --- | --- |
+| CAT-C06 | Any circumstances not listed may be considered based on the standard of care and other fac | general statement about redetermination, not a criterion |
+| CAT-C07 | results and indications of medical necessity properly documented | too vague or general to check |
+| CAT-C08 | the need to restore binocular vision and resolve anisometropia | sentence fragment taken from a longer requirement |
+| CAT-C09 | medical necessity for each procedure to be performed | applies only when both eyes are planned in advance; too vague or general to check |
+
+</details>
 
 ## Facet joint injection / medial branch block / radiofrequency ablation (L33930)
 
-6 parts read, 52 proposed, **4 rejected for quotes not found in the policy**, 6 duplicates removed, 42 kept.
+**Decision rule:** ALL of FAC-C01, FAC-C02, FAC-C03, FAC-C07, FAC-C17, FAC-C18, FAC-C31. Policy indications are joined with AND; image guidance, no routine sedation and documented pain scales are also required.
 
-| id | type | criterion | quote from policy |
+Kept 7 of 42.
+
+| id | type | criterion | review |
 | --- | --- | --- | --- |
-| FAC-C01 | indication | Moderate to severe chronic neck or low back pain, predominantly axial, that causes functional deficit measured on pain or disability scale 6 | Moderate to severe chronic neck or low back pain, predominantly axial, that causes functional deficit measured on pain or disability scale 6 |
-| FAC-C02 | indication | Pain that has been present for a minimum of 3 months with documented failure to respond to noninvasive conservative care management (as tolerated) | Pain that has been present for a minimum of 3 months with documented failure to respond to noninvasive conservative care management (as tolerated) |
-| FAC-C03 | indication | Absence of untreated radiculopathy or neurogenic claudication (except for radiculopathy caused by facet joint synovial cyst) | Absence of untreated radiculopathy or neurogenic claudication (except for radiculopathy caused by facet joint synovial cyst) |
-| FAC-C04 | indication | The patient must meet the criteria for the first diagnostic facet joint injection. | For the first diagnostic facet joint injection to be considered medically reasonable and necessary, the patient must meet the criteria outlined under indications for facet joint interventions. |
-| FAC-C05 | indication | The patient must have had 2 medically reasonable and necessary diagnostic facet joint procedures with each one providing a consistent minimum of 80% relief of primary (index) pain. | Therapeutic facet joint injections are considered medically reasonable and necessary for patients who meet ALL the following criteria: - The patient has had 2 medically reasonable and necessary diagnostic facet joint pro |
-| FAC-C06 | indication | Subsequent therapeutic facet joint procedures at the same anatomic site results in at least consistent 50% pain relief for at least 3 months. | Therapeutic facet joint injections are considered medically reasonable and necessary for patients who meet ALL the following criteria: - The patient has had 2 medically reasonable and necessary diagnostic facet joint pro |
-| FAC-C07 | indication | No non-facet pathology per clinical assessment or radiology studies that could explain the source of the patient’s pain. | There is no non-facet pathology per clinical assessment or radiology studies that could explain the source of the patient’s pain, including but not limited to fracture, tumor, infection, or significant deformity. |
-| FAC-C08 | limitation | No more than 4 diagnostic joint sessions per rolling 12 months. | Frequency limitation : For each covered spinal region no more than 4 diagnostic joint sessions will be considered medically reasonable and necessary per rolling 12 months, in recognition that the pain generator cannot al |
-| FAC-C09 | limitation | No more than 4 therapeutic facet joint injection sessions per rolling 12 months. | Frequency limitation : For each covered spinal region no more than 4 therapeutic facet joint injection sessions will be reimbursed per rolling 12 months. |
-| FAC-C10 | documentation | Documentation of why the patient is not a candidate for radiofrequency ablation. | Documentation of why the patient is not a candidate for radiofrequency ablation (such as established spinal pseudarthrosis, implanted electrical device). |
-| FAC-C11 | indication | After the patient has had at least 2 medically reasonable and necessary diagnostic MBBs, with each one providing a consistent minimum of 80% sustained relief of primary (index) pain (with the duration of relief being consistent with the agent used). | After the patient has had at least 2 medically reasonable and necessary diagnostic MBBs, with each one providing a consistent minimum of 80% sustained relief of primary (index) pain (with the duration of relief being con |
-| FAC-C12 | indication | Repeat 6 facet joint RFA at the same anatomic site is considered medically reasonable and necessary provided the patient had a minimum of consistent 50% improvement in pain for at least 6 months and at least 50% consistent improvement in the ability to perform previously painful movements and ADLs as compared to baseline measurement using the same scale. | Repeat 6 facet joint RFA at the same anatomic site is considered medically reasonable and necessary provided the patient had a minimum of consistent 50% improvement in pain for at least 6 months and at least 50% consiste |
-| FAC-C13 | indication | Advanced diagnostic imaging study (e.g., magnetic resonance imaging [MRI]/ computed tomography [CT]/myelogram) confirm compression or displacement of the corresponding nerve root by a facet joint synovial cyst; AND | Advanced diagnostic imaging study (e.g., magnetic resonance imaging [MRI]/ computed tomography [CT]/myelogram) confirm compression or displacement of the corresponding nerve root by a facet joint synovial cyst; AND |
-| FAC-C14 | indication | Clinical and physical symptoms related to synovial facet cyst are documented in the medical record. | Clinical and physical symptoms related to synovial facet cyst are documented in the medical record. |
-| FAC-C15 | limitation | No more than 2 radiofrequency sessions will be reimbursed per rolling 12 months. | No more than 2 radiofrequency sessions will be reimbursed per rolling 12 months. |
-| FAC-C16 | limitation | 50% or more consistent improvement in pain for at least 3 months. | 50% or more consistent improvement in pain for at least 3 months. |
-| FAC-C17 | limitation | Facet joint interventions done without CT or fluoroscopic guidance are considered not medically reasonable and necessary. | Facet joint interventions done without CT or fluoroscopic guidance are considered not medically reasonable and necessary. |
-| FAC-C18 | limitation | The use of Moderate or Deep Sedation, General Anesthesia, and Monitored Anesthesia Care (MAC) is not considered medically reasonable and necessary during facet injections. | The use of Moderate Sedation for RFA or cyst rupture/aspiration will be considered in individual cases with documentation of medical necessity such as a longstanding well-documented history of inability to cooperate, med |
-| FAC-C19 | limitation | Routine use of Moderate Sedation or Monitored Anesthesia Care (MAC) or use of General Anesthesia or Deep Sedation for RFA is not considered reasonable and necessary. | Routine use of Moderate Sedation or Monitored Anesthesia Care (MAC) or use of General Anesthesia or Deep Sedation for RFA is not considered reasonable and necessary. |
-| FAC-C20 | limitation | It is not routinely necessary for multiple blocks (e.g., epidural injections, sympathetic blocks, trigger point injections, etc.) to be provided to a patient on the same day as facet joint procedures. | It is not routinely necessary for multiple blocks (e.g., epidural injections, sympathetic blocks, trigger point injections, etc.) to be provided to a patient on the same day as facet joint procedures. |
-| FAC-C21 | limitation | If performed, the medical necessity of each injection (at the same or a different level[s]) must be clearly documented in the medical record. | If performed, the medical necessity of each injection (at the same or a different level[s]) must be clearly documented in the medical record. |
-| FAC-C22 | documentation | Documentation of medical necessity such as a longstanding well-documented history of inability to cooperate, medical conditions that would prohibit performance of the procedure, or inability to remain motionless. | Documentation of medical necessity such as a longstanding well-documented history of inability to cooperate, medical conditions that would prohibit performance of the procedure, or inability to remain motionless. |
-| FAC-C23 | documentation | Documentation of medical necessity for each injection (at the same or a different level[s]). | If there is a question as to the source of the recurrent pain then diagnostic procedures must be repeated. |
-| FAC-C24 | limitation | Therapeutic facet injections are not covered unless there is justification in the medical documentation on why RFA cannot be performed. | Therapeutic facet injections are not covered unless there is justification in the medical documentation on why RFA cannot be performed. |
-| FAC-C25 | limitation | Facet joint procedures in patients for the indication of generalized pain conditions (such as fibromyalgia) or chronic centralized pain syndromes are considered not medically reasonable and necessary. | Facet joint procedures in patients for the indication of generalized pain conditions (such as fibromyalgia) or chronic centralized pain syndromes are considered not medically reasonable and necessary. |
-| FAC-C26 | limitation | In patients with implanted electrical devices, providers must follow manufacturer instructions and extra planning as indicated to ensure safety of procedure. | In patients with implanted electrical devices, providers must follow manufacturer instructions and extra planning as indicated to ensure safety of procedure. |
-| FAC-C27 | limitation | Non-thermal modalities for facet joint denervation including chemical, low-grade thermal energy (less than 80 degrees Celsius), laser neurolysis, and cryoablation | Non-thermal modalities for facet joint denervation including chemical, low-grade thermal energy (less than 80 degrees Celsius), laser neurolysis, and cryoablation |
-| FAC-C28 | limitation | Intra-facet implants | Intra-facet implants |
-| FAC-C29 | limitation | Facet joint procedure performed after anterior lumbar interbody fusion or ALIF | Facet joint procedure performed after anterior lumbar interbody fusion or ALIF |
-| FAC-C30 | limitation | Definitive clinical and/or imaging findings pointing to a specific diagnosis other than facet joint syndrome | Definitive clinical and/or imaging findings pointing to a specific diagnosis other than facet joint syndrome |
-| FAC-C31 | documentation | The scales used for measurement of pain and/or disability must be documented in the medical record. | The scales used for measurement of pain and/or disability must be documented in the medical record. |
-| FAC-C32 | indication | The new onset of the spinal pain must be materially and significantly different in location, type, duration and character from the previously treated spine pain. | New Onset of Spinal Pain: The new onset of the spinal pain must be materially and significantly different in location, type, duration and character from the previously treated spine pain. |
-| FAC-C33 | indication | The patient must have generalized allodynia which is causally related to the increased responsiveness of nociceptive nerves in the central nervous system to the normal threshold or subthreshold simulation from the afferent nerves. | generalized allodynia which is causally related to the increased responsiveness of nociceptive nerves in the central nervous system to the normal threshold or subthreshold simulation from the afferent nerves. |
-| FAC-C34 | indication | The patient must have cervical facet pain, which may be characterized by chronic headaches, restricted motion, and axial neck pain, which may radiate sub-occipitally to the shoulders or mid-back. | Cervical Facet Pain: Pain located in the cervical spine, which may be characterized by chronic headaches, restricted motion, and axial neck pain, which may radiate sub-occipitally to the shoulders or mid-back. |
-| FAC-C35 | indication | The patient must have chronic pain persisting for greater than or equal to 12 weeks after the onset of the pain. | Chronic Pain: The temporal definition of pain persisting for greater than or equal to 12 weeks after the onset of the pain. |
-| FAC-C36 | indication | The patient must have chronic low back pain. | physical therapy, acupuncture (applies to only chronic low back pain), or spinal manipulation. |
-| FAC-C37 | indication | The patient must have non-radicular back pain that is not causally related to a spinal nerve root irritation. | Non-Radicular Back Pain: The radiating non-neuropathic pain which is not causally related to a spinal nerve root irritation and does not produce reproducible neuropathic symptoms in an objective dermatomal pattern. |
-| FAC-C38 | indication | The patient must have peripheral neuropathic pain that is causally related to a lesion or disease of the peripheral somatosensory nerves. | Peripheral Neuropathic Pain: Pain, which is causally related to a lesion or disease of the peripheral somatosensory nerves. |
-| FAC-C39 | indication | The patient must have radiculopathy, which is radiating neuropathic pain causally related to the spinal nerve root irritation. | Radiculopathy: Radiating neuropathic pain causally related to the spinal nerve root irritation, which extends distally producing neuropathic pain in a dermatomal pattern. |
-| FAC-C40 | indication | The patient must have a specific region of the back involved, defined as C1-C7/T1-T12 or L1-L5/S1-S5. | Region: The segments of the back involved will be defined in this policy as 2 regions: |
-| FAC-C41 | indication | The patient must have subacute pain, which occurs during the 4-12-week time period. | Subacute Pain: The temporal definition of pain occurring during the 4-12-week time period. |
-| FAC-C42 | indication | The patient must have a specific type of injection, such as TFESI, performed via a paramedian approach. | Transforaminal Epidural Steroid Injection (TFESI): An epidural injection performed via a paramedian approach to enter the epidural space by placing the needle in the posterior-superior quadrant of the intervertebral fora |
+| FAC-C01 | indication | Moderate to severe chronic neck or low back pain, predominantly axial, that causes functional deficit measured on pain or disability scale 6 | kept as drafted |
+| FAC-C02 | indication | Pain that has been present for a minimum of 3 months with documented failure to respond to noninvasive conservative care management (as tolerated) | kept as drafted |
+| FAC-C03 | indication | Absence of untreated radiculopathy or neurogenic claudication (except for radiculopathy caused by facet joint synovial cyst) | kept as drafted |
+| FAC-C07 | indication | No non-facet pathology per clinical assessment or radiology studies that could explain the source of the patient’s pain. | kept as drafted |
+| FAC-C17 | limitation | The procedure was performed under CT or fluoroscopic guidance | reworded as a checkable statement |
+| FAC-C18 | limitation | No moderate/deep sedation, general anesthesia or MAC was used during the facet injection | reworded as a checkable statement; quote replaced with the matching policy sentence |
+| FAC-C31 | documentation | A pain and/or disability scale is documented | reworded as a checkable statement |
+
+<details><summary>Dropped items and reasons</summary>
+
+| id | drafted criterion | reason |
+| --- | --- | --- |
+| FAC-C04 | The patient must meet the criteria for the first diagnostic facet joint injection. | applies to repeat/therapeutic/RFA procedures, not a single procedure note in this evaluation |
+| FAC-C05 | The patient must have had 2 medically reasonable and necessary diagnostic facet joint proc | applies to repeat/therapeutic/RFA procedures, not a single procedure note in this evaluation |
+| FAC-C06 | Subsequent therapeutic facet joint procedures at the same anatomic site results in at leas | applies to repeat/therapeutic/RFA procedures, not a single procedure note in this evaluation |
+| FAC-C08 | No more than 4 diagnostic joint sessions per rolling 12 months. | needs claims history across visits; cannot be checked from a single procedure note |
+| FAC-C09 | No more than 4 therapeutic facet joint injection sessions per rolling 12 months. | needs claims history across visits; cannot be checked from a single procedure note |
+| FAC-C10 | Documentation of why the patient is not a candidate for radiofrequency ablation. | applies to repeat/therapeutic/RFA procedures, not a single procedure note in this evaluation |
+| FAC-C11 | After the patient has had at least 2 medically reasonable and necessary diagnostic MBBs, w | applies to repeat/therapeutic/RFA procedures, not a single procedure note in this evaluation |
+| FAC-C12 | Repeat 6 facet joint RFA at the same anatomic site is considered medically reasonable and  | applies to repeat/therapeutic/RFA procedures, not a single procedure note in this evaluation |
+| FAC-C13 | Advanced diagnostic imaging study (e.g., magnetic resonance imaging [MRI]/ computed tomogr | synovial cyst cases only |
+| FAC-C14 | Clinical and physical symptoms related to synovial facet cyst are documented in the medica | synovial cyst cases only |
+| FAC-C15 | No more than 2 radiofrequency sessions will be reimbursed per rolling 12 months. | needs claims history across visits; cannot be checked from a single procedure note |
+| FAC-C16 | 50% or more consistent improvement in pain for at least 3 months. | applies to repeat/therapeutic/RFA procedures, not a single procedure note in this evaluation |
+| FAC-C19 | Routine use of Moderate Sedation or Monitored Anesthesia Care (MAC) or use of General Anes | applies to repeat/therapeutic/RFA procedures, not a single procedure note in this evaluation |
+| FAC-C20 | It is not routinely necessary for multiple blocks (e.g., epidural injections, sympathetic  | about other blocks on the same day; rare in these notes |
+| FAC-C21 | If performed, the medical necessity of each injection (at the same or a different level[s] | too vague or general to check |
+| FAC-C22 | Documentation of medical necessity such as a longstanding well-documented history of inabi | applies to repeat/therapeutic/RFA procedures, not a single procedure note in this evaluation |
+| FAC-C23 | Documentation of medical necessity for each injection (at the same or a different level[s] | quote does not support the criterion (quote is a different sentence) |
+| FAC-C24 | Therapeutic facet injections are not covered unless there is justification in the medical  | applies to repeat/therapeutic/RFA procedures, not a single procedure note in this evaluation |
+| FAC-C25 | Facet joint procedures in patients for the indication of generalized pain conditions (such | covered by FAC-C07 (no other explanation for the pain) |
+| FAC-C26 | In patients with implanted electrical devices, providers must follow manufacturer instruct | device safety instruction, not a coverage criterion |
+| FAC-C27 | Non-thermal modalities for facet joint denervation including chemical, low-grade thermal e | item from the list of non-covered techniques; not relevant to injection notes |
+| FAC-C28 | Intra-facet implants | item from the list of non-covered techniques; not relevant to injection notes |
+| FAC-C29 | Facet joint procedure performed after anterior lumbar interbody fusion or ALIF | item from the list of non-covered techniques; not relevant to injection notes |
+| FAC-C30 | Definitive clinical and/or imaging findings pointing to a specific diagnosis other than fa | covered by FAC-C07 |
+| FAC-C32 | The new onset of the spinal pain must be materially and significantly different in locatio | misread from the policy's definitions/glossary section; it describes a term, not a coverage requirement |
+| FAC-C33 | The patient must have generalized allodynia which is causally related to the increased res | misread from the policy's definitions/glossary section; it describes a term, not a coverage requirement |
+| FAC-C34 | The patient must have cervical facet pain, which may be characterized by chronic headaches | misread from the policy's definitions/glossary section; it describes a term, not a coverage requirement |
+| FAC-C35 | The patient must have chronic pain persisting for greater than or equal to 12 weeks after  | misread from the policy's definitions/glossary section; it describes a term, not a coverage requirement |
+| FAC-C36 | The patient must have chronic low back pain. | quote does not support the criterion (quote is a different sentence) |
+| FAC-C37 | The patient must have non-radicular back pain that is not causally related to a spinal ner | misread from the policy's definitions/glossary section; it describes a term, not a coverage requirement |
+| FAC-C38 | The patient must have peripheral neuropathic pain that is causally related to a lesion or  | misread from the policy's definitions/glossary section; it describes a term, not a coverage requirement |
+| FAC-C39 | The patient must have radiculopathy, which is radiating neuropathic pain causally related  | misread from the policy's definitions/glossary section; it describes a term, not a coverage requirement |
+| FAC-C40 | The patient must have a specific region of the back involved, defined as C1-C7/T1-T12 or L | misread from the policy's definitions/glossary section; it describes a term, not a coverage requirement |
+| FAC-C41 | The patient must have subacute pain, which occurs during the 4-12-week time period. | misread from the policy's definitions/glossary section; it describes a term, not a coverage requirement |
+| FAC-C42 | The patient must have a specific type of injection, such as TFESI, performed via a paramed | misread from the policy's definitions/glossary section; it describes a term, not a coverage requirement |
+
+</details>
 
 ## Epidural steroid injection (L39240)
 
-5 parts read, 37 proposed, **3 rejected for quotes not found in the policy**, 5 duplicates removed, 29 kept.
+**Decision rule:** ALL of EPI-C01, EPI-C02, EPI-C03, EPI-C04, EPI-C08, EPI-C12, EPI-C13, EPI-C15, EPI-C16. Policy indications are joined with AND; image guidance, no routine sedation, a documented pain scale and the session limits are also required.
 
-| id | type | criterion | quote from policy |
+Kept 9 of 29.
+
+| id | type | criterion | review |
 | --- | --- | --- | --- |
-| EPI-C01 | indication | History, physical examination, and concordant radiological image-based diagnostic testing supporting one of the following 5 : | History, physical examination, and concordant radiological image-based diagnostic testing supporting one of the following 5 : |
-| EPI-C02 | indication | Radiculopathy, radicular pain and/or neurogenic claudication is severe enough to greatly impact quality of life or function. | Radiculopathy, radicular pain and/or neurogenic claudication is severe enough to greatly impact quality of life or function. |
-| EPI-C03 | indication | Pain duration of at least four (4) weeks, and the inability to tolerate noninvasive conservative care or medical documentation of failure to respond to four (4) weeks of noninvasive conservative care or acute herpes zoster refractory to conservative management where a four (4) week wait is not required. | Pain duration of at least four (4) weeks, and the inability to tolerate noninvasive conservative care or medical documentation of failure to respond to four (4) weeks of noninvasive conservative care or acute herpes zost |
-| EPI-C04 | limitation | The ESIs must be performed under CT or fluoroscopy image guidance with contrast, 10 unless the patient has a documented allergy to low molecular weight nonionic contrast. | The ESIs must be performed under CT or fluoroscopy image guidance with contrast, 10 unless the patient has a documented allergy to low molecular weight nonionic contrast. |
-| EPI-C05 | limitation | It is medically reasonable and necessary to perform TFESIs bilaterally only when clinically indicated. | It is medically reasonable and necessary to perform TFESIs bilaterally only when clinically indicated. |
-| EPI-C06 | limitation | Repeat ESI when the first injection directly and significantly provided improvement of the condition being treated may be considered medically reasonable and necessary when the medical record documents a minimum of consistent 50% improvement in pain for at least three (3) months or at least 50% consistent improvement in the ability to perform previously painful movements and ADLs as compared to baseline measurement using the same scale . | 6. Repeat ESI when the first injection directly and significantly provided improvement of the condition being treated may be considered medically reasonable and necessary when the medical record documents a minimum of co |
-| EPI-C07 | limitation | If a patient fails to respond well to the initial ESI, a repeat ESI after 14 days can be performed, using a different approach, level and/or medication if appropriate, with the rationale and medical necessity for the second ESI documented in the medical record. | If a patient fails to respond well to the initial ESI, a repeat ESI after 14 days can be performed, using a different approach, level and/or medication if appropriate, with the rationale and medical necessity for the sec |
-| EPI-C08 | documentation | The scales used to measure of pain and/or disability must be documented in the medical record. Acceptable scales include but are not limited to: verbal rating scales, Numerical Rating Scale (NRS) and Visual Analog Scale (VAS) for pain assessment, and Pain Disability Assessment Scale (PDAS), Oswestry Disability Index (ODI), Oswestry Low Back Pain Disability Questionnaire (OSW), Quebec Back Pain Disability Scale (QUE), Roland Morris Pain Scale, Back Pain Functional Scale (BPFS), and the PROMIS profile domains to assess function. | 9. Patient’s should be part of an active rehabilitation program, home exercise program or functional restoration program. 10,12 |
-| EPI-C09 | limitation | An initial injection of contrast is required to confirm epidural placement, unless the patient has a contraindication to contrast. The subsequent epidural steroid injections should include corticosteroids and may be combined with anesthetics or saline. | 7. An initial injection of contrast is required to confirm epidural placement, unless the patient has a contraindication to contrast. The subsequent epidural steroid injections should include corticosteroids and may be c |
-| EPI-C10 | limitation | ESIs should be performed in conjunction with conservative treatments. | 8. The ESIs should be performed in conjunction with conservative treatments. |
-| EPI-C11 | limitation | It is not considered medically reasonable and necessary to perform multiple blocks (ESI, sympathetic blocks, facet blocks, trigger point injections etc.) during the same session as ESIs, with the exception of a facet synovial cyst and ESI performed in the same session. | 3. It is not considered medically reasonable and necessary to perform multiple blocks (ESI, sympathetic blocks, facet blocks, trigger point injections etc.) during the same session as ESIs, with the exception of a facet  |
-| EPI-C12 | limitation | Use of Moderate or Deep Sedation, General Anesthesia, and Monitored Anesthesia Care (MAC) is usually unnecessary or rarely indicated for these procedures and therefore not considered medically reasonable and necessary. | 4. Use of Moderate or Deep Sedation, General Anesthesia, and Monitored Anesthesia Care (MAC) is usually unnecessary or rarely indicated for these procedures and therefore not considered medically reasonable and necessary |
-| EPI-C13 | limitation | ESIs to treat non-specific low back pain (LBP), axial spine pain, complex regional pain syndrome, widespread diffuse pain, pain from neuropathy from other causes, cervicogenic headaches are considered investigational and therefore are not considered medically reasonable and necessary. | 5. ESIs to treat non-specific low back pain (LBP), axial spine pain, complex regional pain syndrome, widespread diffuse pain, pain from neuropathy from other causes, cervicogenic headaches are considered investigational  |
-| EPI-C14 | limitation | ESIs are limited to a maximum of four (4) sessions per spinal region in a rolling twelve (12) month period. | 6. ESIs are limited to a maximum of four (4) sessions per spinal region in a rolling twelve (12) month period. |
-| EPI-C15 | limitation | It is not considered medically reasonable and necessary for more than one spinal region to be injected in the same session. | 7. It is not considered medically reasonable and necessary for more than one spinal region to be injected in the same session. |
-| EPI-C16 | limitation | It is not considered medically reasonable and necessary to perform TFESIs at more than two (2) nerve root levels during the same session. | 8. It is not considered medically reasonable and necessary to perform TFESIs at more than two (2) nerve root levels during the same session. |
-| EPI-C17 | limitation | It is not medically reasonable and necessary to perform CESIs or ILESIs bilaterally. | 10. It is not medically reasonable and necessary to perform CESIs or ILESIs bilaterally. |
-| EPI-C18 | limitation | It is not medically reasonable and necessary to prescribe a predetermined series of ESIs. | 11. It is not medically reasonable and necessary to prescribe a predetermined series of ESIs. |
-| EPI-C19 | limitation | Steroid dosing should be the lowest effective amount, it is recommended not to exceed 80 mg of triamcinolone, 12 mg of betamethasone, 15 mg of dexamethasone per session. | 12. Steroid dosing should be the lowest effective amount, it is recommended not to exceed 80 mg of triamcinolone, 12 mg of betamethasone, 15 mg of dexamethasone per session. |
-| EPI-C20 | limitation | It generally would not be considered medically reasonable and necessary for treatment with ESI to extend beyond 12 months. | 13. It generally would not be considered medically reasonable and necessary for treatment with ESI to extend beyond 12 months. |
-| EPI-C21 | limitation | Pain is severe enough to cause a significant degree of functional disability or vocational disability. | Pain is severe enough to cause a significant degree of functional disability or vocational disability. |
-| EPI-C22 | limitation | ESI provides at least 50% sustained improvement of pain and/or 50% objective improvement in function (using same scale as baseline). | ESI provides at least 50% sustained improvement of pain and/or 50% objective improvement in function (using same scale as baseline). |
-| EPI-C23 | documentation | The primary care provider must be notified regarding continuation of procedures and prolonged repeat steroid use. | The primary care provider must be notified regarding continuation of procedures and prolonged repeat steroid use. |
-| EPI-C24 | indication | The patient must have radiculopathy | Radiculopathy – Radiating neuropathic pain causally related to the spinal nerve root irritation, which extends distally, producing neuropathic pain in a myotomal or dermatomal pattern. |
-| EPI-C25 | limitation | The procedure must be performed under fluoroscopic guidance | Interlaminar epidural steroid injection (ILESI) – An injection of contrast (absent allergy to contrast), followed by the introduction of a corticosteroid and possibly a local anesthetic into the epidural space of the spi |
-| EPI-C26 | limitation | The procedure must be performed by a physician | The results of applying the GRADE system to clinical trial data are displayed in a table known as a GRADE profile. |
-| EPI-C27 | documentation | The procedure must be documented in the medical record | Impairment – A significant deviation, loss, or loss of use of any body structure or body function in an individual with a health condition, disorder, or disease. |
-| EPI-C28 | indication | The temporal definition of pain occurring during the six to twelve-week time period. | The temporal definition of pain occurring during the six to twelve-week time period. |
-| EPI-C29 | indication | The temporal definition of pain occurring 12 weeks after the onset of the pain. | The temporal definition of pain occurring 12 weeks after the onset of the pain. |
+| EPI-C01 | indication | History, exam and imaging support radiculopathy, radicular pain or neurogenic claudication (e.g., disc herniation or stenosis), post-laminectomy syndrome, or acute herpes zoster pain | reworded as a checkable statement |
+| EPI-C02 | indication | Radiculopathy, radicular pain and/or neurogenic claudication is severe enough to greatly impact quality of life or function. | kept as drafted |
+| EPI-C03 | indication | Pain duration of at least four (4) weeks, and the inability to tolerate noninvasive conservative care or medical documentation of failure to respond to four (4) weeks of noninvasive conservative care or acute herpes zoster refractory to conservative management where a four (4) week wait is not required. | kept as drafted |
+| EPI-C04 | limitation | The injection was performed under CT or fluoroscopic guidance with contrast (unless contrast allergy is documented) | reworded as a checkable statement |
+| EPI-C08 | documentation | A pain and/or disability scale is documented (e.g., NRS, VAS, ODI) | reworded as a checkable statement; quote replaced with the matching policy sentence |
+| EPI-C12 | limitation | No moderate/deep sedation, general anesthesia or MAC was used | reworded as a checkable statement |
+| EPI-C13 | limitation | The pain being treated is not non-specific low back pain or axial-only spine pain | reworded as a checkable statement |
+| EPI-C15 | limitation | Only one spinal region was injected in the session | reworded as a checkable statement |
+| EPI-C16 | limitation | Transforaminal injections were done at no more than 2 nerve root levels in the session | reworded as a checkable statement |
+
+<details><summary>Dropped items and reasons</summary>
+
+| id | drafted criterion | reason |
+| --- | --- | --- |
+| EPI-C05 | It is medically reasonable and necessary to perform TFESIs bilaterally only when clinicall | bilateral TFESI is allowed when clinically indicated; too vague or general to check |
+| EPI-C06 | Repeat ESI when the first injection directly and significantly provided improvement of the | applies to repeat/therapeutic/RFA procedures, not a single procedure note in this evaluation |
+| EPI-C07 | If a patient fails to respond well to the initial ESI, a repeat ESI after 14 days can be p | applies to repeat/therapeutic/RFA procedures, not a single procedure note in this evaluation |
+| EPI-C09 | An initial injection of contrast is required to confirm epidural placement, unless the pat | covered by EPI-C04 (contrast use) |
+| EPI-C10 | ESIs should be performed in conjunction with conservative treatments. | too vague or general to check |
+| EPI-C11 | It is not considered medically reasonable and necessary to perform multiple blocks (ESI, s | about other blocks in the same session; rare in these notes |
+| EPI-C14 | ESIs are limited to a maximum of four (4) sessions per spinal region in a rolling twelve ( | needs claims history across visits; cannot be checked from a single procedure note |
+| EPI-C17 | It is not medically reasonable and necessary to perform CESIs or ILESIs bilaterally. | rare in these notes |
+| EPI-C18 | It is not medically reasonable and necessary to prescribe a predetermined series of ESIs. | needs claims history across visits; cannot be checked from a single procedure note |
+| EPI-C19 | Steroid dosing should be the lowest effective amount, it is recommended not to exceed 80 m | dosing guidance (recommended, not required) |
+| EPI-C20 | It generally would not be considered medically reasonable and necessary for treatment with | needs claims history across visits; cannot be checked from a single procedure note |
+| EPI-C21 | Pain is severe enough to cause a significant degree of functional disability or vocational | covered by EPI-C02 |
+| EPI-C22 | ESI provides at least 50% sustained improvement of pain and/or 50% objective improvement i | applies to repeat/therapeutic/RFA procedures, not a single procedure note in this evaluation |
+| EPI-C23 | The primary care provider must be notified regarding continuation of procedures and prolon | applies to repeat/therapeutic/RFA procedures, not a single procedure note in this evaluation |
+| EPI-C24 | The patient must have radiculopathy | covered by EPI-C01 |
+| EPI-C25 | The procedure must be performed under fluoroscopic guidance | quote does not support the criterion (quote is a different sentence) |
+| EPI-C26 | The procedure must be performed by a physician | quote does not support the criterion (quote is a different sentence) |
+| EPI-C27 | The procedure must be documented in the medical record | quote does not support the criterion (quote is a different sentence) |
+| EPI-C28 | The temporal definition of pain occurring during the six to twelve-week time period. | misread from the policy's definitions/glossary section; it describes a term, not a coverage requirement |
+| EPI-C29 | The temporal definition of pain occurring 12 weeks after the onset of the pain. | misread from the policy's definitions/glossary section; it describes a term, not a coverage requirement |
+
+</details>
 
 ## Blepharoplasty (eyelid surgery) (L34194)
 
-3 parts read, 20 proposed, **2 rejected for quotes not found in the policy**, 0 duplicates removed, 18 kept.
+**Decision rule:** ALL of BLE-C05, BLE-C10 AND AT LEAST ONE of BLE-C06, BLE-C07, BLE-C08, BLE-C15. A documented functional deficit and photographs are required, plus at least one physical sign (MRD of 2.0 mm or less, pseudoptosis, tissue obscuring the line of sight, or lid obstructing the pupil).
 
-| id | type | criterion | quote from policy |
+Kept 6 of 18.
+
+| id | type | criterion | review |
 | --- | --- | --- | --- |
-| BLE-C01 | indication | For the purposes of this policy, these surgeries (either individually or in the minimum combination required to achieve a satisfactory surgical outcome) are functional when overhanging skin or upper lid position secondary to dermatochalasis, blepharochalasis, blepharoptosis, or pseudoptosis is sufficiently low to produce a visually-significant field restriction considered by this policy to be approximately 30 degrees or less from fixation. | For the purposes of this policy, these surgeries (either individually or in the minimum combination required to achieve a satisfactory surgical outcome) are functional when overhanging skin or upper lid position secondar |
-| BLE-C02 | indication | Published literature correlates this amount of field restriction with a Margin Reflex Distance (see below) of 2.0 mm or less. | Published literature correlates this amount of field restriction with a Margin Reflex Distance (see below) of 2.0 mm or less. |
-| BLE-C03 | limitation | When a noncovered cosmetic surgical procedure is performed in the same operative session as a covered surgical procedure, benefits will be provided for the covered procedure only. | When a noncovered cosmetic surgical procedure is performed in the same operative session as a covered surgical procedure, benefits will be provided for the covered procedure only. |
-| BLE-C04 | documentation | Reasonably complete information fulfilling the criteria in Section A (Patient Complaints and Physical Signs), and Section B (Photographs) as delineated below must be adequately documented in the patient’s medical records to demonstrate the reasonableness and necessity of the procedure(s) performed. | Reasonably complete information fulfilling the criteria in Section A (Patient Complaints and Physical Signs), and Section B (Photographs) as delineated below must be adequately documented in the patient’s medical records |
-| BLE-C05 | indication | A functional deficit or disturbance secondary to eyelid and/or brow abnormalities must be documented, such as interference with vision or visual field that impacts an activity of daily living (such as difficulty reading or driving). | A functional deficit or disturbance secondary to eyelid and/or brow abnormalities must be documented, such as interference with vision or visual field that impacts an activity of daily living (such as difficulty reading  |
-| BLE-C06 | limitation | For Blepharoptosis Repair - A margin reflex distance (MRD sometimes referred to as MRD1)) of 2.0 mm or less. | A margin reflex distance (MRD sometimes referred to as MRD1)) of 2.0 mm or less. |
-| BLE-C07 | limitation | For Upper Blepharoplasty and/or Brow Ptosis Repair - Redundant eyelid tissue hanging over the eyelid margin resulting in pseudoptosis where the “pseudo” margin produces a central “pseudo-MRD” of 2.0 mm or less, or | Redundant eyelid tissue hanging over the eyelid margin resulting in pseudoptosis where the “pseudo” margin produces a central “pseudo-MRD” of 2.0 mm or less, or |
-| BLE-C08 | limitation | For Upper Blepharoplasty and/or Brow Ptosis Repair - Redundant eyelid tissue predominantly medially or laterally that clearly obscures the line of sight in corresponding gaze. | Redundant eyelid tissue predominantly medially or laterally that clearly obscures the line of sight in corresponding gaze. |
-| BLE-C09 | limitation | When requested documentation does not meet the criteria for the service rendered or the documentation does not establish the medical necessity for the services, (i.e., illegible or incomplete) such services will be denied as not reasonable and necessary. | When requested documentation does not meet the criteria for the service rendered or the documentation does not establish the medical necessity for the services, (i.e., illegible or incomplete) such services will be denie |
-| BLE-C10 | documentation | The “physical signs” documented in Section A must be clearly represented in photographs of the structures of interest and the photographs must be of good quality and of sufficient size and detail as to make those structures easily recognizable. | The “physical signs” documented in Section A must be clearly represented in photographs of the structures of interest and the photographs must be of good quality and of sufficient size and detail as to make those structu |
-| BLE-C11 | documentation | Unless medial/lateral gaze is required to demonstrate a specific deficit, photos should be with gaze in the primary position, looking straight ahead. | Unless medial/lateral gaze is required to demonstrate a specific deficit, photos should be with gaze in the primary position, looking straight ahead. |
-| BLE-C12 | documentation | Oblique photos are only necessary if needed to better demonstrate a finding not clearly shown by other requested photos. | Oblique photos are only necessary if needed to better demonstrate a finding not clearly shown by other requested photos. |
-| BLE-C13 | documentation | Digital or film photographs are acceptable, and may be submitted electronically where possible. | Digital or film photographs are acceptable, and may be submitted electronically where possible. |
-| BLE-C14 | documentation | Photographs must be identified with the beneficiary’s name and the date. | Photographs must be identified with the beneficiary’s name and the date. |
-| BLE-C15 | indication | If the eyelid obstructs the pupil, there is a clear-cut indication for surgery. | If the eyelid obstructs the pupil, there is a clear-cut indication for surgery. |
-| BLE-C16 | limitation | For reference, the colored part of the eye is about 11 mm in diameter, so the distance between the light reflex and the lid would need to be about one fifth that distance or less for the MRD to be 2.0 mm or less. | For reference, the colored part of the eye is about 11 mm in diameter, so the distance between the light reflex and the lid would need to be about one fifth that distance or less for the MRD to be 2.0 mm or less. |
-| BLE-C17 | limitation | Two photos are needed:One showing both eyes of the patient at rest demonstrating the above MRD criterion in the more ptotic eye, and another showing both eyes of the patient with the more ptotic eyelid raised to a height restoring a normal visual field, resulting in increased ptosis (meeting the above MRD standard) in the less ptotic eye. | Two photos are needed:One showing both eyes of the patient at rest demonstrating the above MRD criterion in the more ptotic eye, and another showing both eyes of the patient with the more ptotic eyelid raised to a height |
-| BLE-C18 | limitation | If both a blepharoplasty and a ptosis repair are planned, both must be individually documented. | If both a blepharoplasty and a ptosis repair are planned, both must be individually documented. |
+| BLE-C05 | indication | A functional deficit or disturbance secondary to eyelid and/or brow abnormalities must be documented, such as interference with vision or visual field that impacts an activity of daily living (such as difficulty reading or driving). | kept as drafted |
+| BLE-C06 | limitation | Ptosis with a margin reflex distance (MRD1) of 2.0 mm or less | reworded as a checkable statement |
+| BLE-C07 | limitation | Redundant upper lid skin hanging over the lid margin with a pseudo-MRD of 2.0 mm or less | reworded as a checkable statement |
+| BLE-C08 | limitation | Redundant lid tissue medially or laterally that obscures the line of sight | reworded as a checkable statement |
+| BLE-C10 | documentation | Photographs documenting the eyelid findings are referenced in the record | reworded as a checkable statement |
+| BLE-C15 | indication | If the eyelid obstructs the pupil, there is a clear-cut indication for surgery. | kept as drafted |
+
+<details><summary>Dropped items and reasons</summary>
+
+| id | drafted criterion | reason |
+| --- | --- | --- |
+| BLE-C01 | For the purposes of this policy, these surgeries (either individually or in the minimum co | background definition; the checkable parts are BLE-C05 to BLE-C08 |
+| BLE-C02 | Published literature correlates this amount of field restriction with a Margin Reflex Dist | background on why 2.0 mm is used; covered by BLE-C06/C07 |
+| BLE-C03 | When a noncovered cosmetic surgical procedure is performed in the same operative session a | billing rule, not a clinical criterion |
+| BLE-C04 | Reasonably complete information fulfilling the criteria in Section A (Patient Complaints a | covered by BLE-C05 and BLE-C10 |
+| BLE-C09 | When requested documentation does not meet the criteria for the service rendered or the do | general statement about denials |
+| BLE-C11 | Unless medial/lateral gaze is required to demonstrate a specific deficit, photos should be | photo technical detail; not checkable from an operative note |
+| BLE-C12 | Oblique photos are only necessary if needed to better demonstrate a finding not clearly sh | photo technical detail; not checkable from an operative note |
+| BLE-C13 | Digital or film photographs are acceptable, and may be submitted electronically where poss | photo technical detail; not checkable from an operative note |
+| BLE-C14 | Photographs must be identified with the beneficiary’s name and the date. | photo technical detail; not checkable from an operative note |
+| BLE-C16 | For reference, the colored part of the eye is about 11 mm in diameter, so the distance bet | explanatory reference about eye size |
+| BLE-C17 | Two photos are needed:One showing both eyes of the patient at rest demonstrating the above | photo technical detail; not checkable from an operative note |
+| BLE-C18 | If both a blepharoplasty and a ptosis repair are planned, both must be individually docume | applies only when both procedures are planned |
+
+</details>
 

@@ -3,7 +3,7 @@
   "lcd_id": "34203",
   "title": "Cataract Surgery in Adults",
   "model": "llama3.2:3b",
-  "status": "draft - review by hand",
+  "status": "reviewed by Sharvanthikha",
   "criteria": [
     {
       "id": "CAT-C01",
@@ -11,7 +11,7 @@
       "type": "indication",
       "source_quote": "Cataract causing symptomatic (i.e., causing the patient to seek medical attention) impairment of visual function not correctable with a tolerable change in glasses or contact lenses resulting in the patient's inability to function satisfactorily while performing Activities of Daily Life including, but not limited to reading, viewing television, driving, or meeting vocational or recreational needs.",
       "keep": true,
-      "reviewer_note": ""
+      "reviewer_note": "kept as drafted"
     },
     {
       "id": "CAT-C02",
@@ -19,7 +19,7 @@
       "type": "indication",
       "source_quote": "Concomitant intraocular disease (e.g., diabetic retinopathy or intraocular tumor) requiring monitoring or treatment that is prevented by the presence of cataract.",
       "keep": true,
-      "reviewer_note": ""
+      "reviewer_note": "kept as drafted"
     },
     {
       "id": "CAT-C03",
@@ -27,7 +27,7 @@
       "type": "indication",
       "source_quote": "Lens-induced disease threatening vision or ocular health (including, but not limited to, phacomorphic or phacolytic glaucoma).",
       "keep": true,
-      "reviewer_note": ""
+      "reviewer_note": "kept as drafted"
     },
     {
       "id": "CAT-C04",
@@ -35,7 +35,7 @@
       "type": "indication",
       "source_quote": "High probability of accelerating cataract development as a result of a concomitant or subsequent procedure (e.g., pars plana vitrectomy, iridocyclectomy, procedure for ocular trauma) and treatments such as external beam irradiation.",
       "keep": true,
-      "reviewer_note": ""
+      "reviewer_note": "kept as drafted"
     },
     {
       "id": "CAT-C05",
@@ -43,39 +43,51 @@
       "type": "indication",
       "source_quote": "Cataract interfering with the performance of vitreoretinal surgery.",
       "keep": true,
-      "reviewer_note": ""
+      "reviewer_note": "kept as drafted"
     },
     {
       "id": "CAT-C06",
       "criterion": "Any circumstances not listed may be considered based on the standard of care and other factors related to medical necessity at redetermination.",
       "type": "limitation",
       "source_quote": "Any circumstances not listed may be considered based on the standard of care and other factors related to medical necessity at redetermination.",
-      "keep": true,
-      "reviewer_note": ""
+      "keep": false,
+      "reviewer_note": "general statement about redetermination, not a criterion"
     },
     {
       "id": "CAT-C07",
       "criterion": "results and indications of medical necessity properly documented",
       "type": "documentation",
       "source_quote": "and must have results and indications of medical necessity properly documented.",
-      "keep": true,
-      "reviewer_note": ""
+      "keep": false,
+      "reviewer_note": "too vague or general to check"
     },
     {
       "id": "CAT-C08",
       "criterion": "the need to restore binocular vision and resolve anisometropia",
       "type": "limitation",
       "source_quote": "the need to restore binocular vision and resolve anisometropia,",
-      "keep": true,
-      "reviewer_note": ""
+      "keep": false,
+      "reviewer_note": "sentence fragment taken from a longer requirement"
     },
     {
       "id": "CAT-C09",
       "criterion": "medical necessity for each procedure to be performed",
       "type": "documentation",
       "source_quote": "If the decision to perform cataract extraction in both eyes is made prior to the first (sequential) cataract extraction, the documentation must support the medical necessity for each procedure to be performed.",
-      "keep": true,
-      "reviewer_note": ""
+      "keep": false,
+      "reviewer_note": "applies only when both eyes are planned in advance; too vague or general to check"
     }
-  ]
+  ],
+  "decision_rule": {
+    "any_of": [
+      [
+        "CAT-C01",
+        "CAT-C02",
+        "CAT-C03",
+        "CAT-C04",
+        "CAT-C05"
+      ]
+    ],
+    "explanation": "Policy: covered when one (or more) of the listed conditions is documented."
+  }
 }
