@@ -23,7 +23,8 @@ NOTES_CSV = Path("data/raw/mtsamples/mtsamples.csv")
 OUT_DIR = Path("data/interim/coverage")
 REPORT = Path("reports/coverage_data.md")
 
-# The 4 procedures. A note counts only if its title or description names the procedure.
+# The 4 procedures. A note counts only if its title or description contains at least one
+# "must" word AND at least one "any" word.
 PROCEDURES = {
     "cataract": {
         "name": "Cataract surgery",
@@ -32,7 +33,7 @@ PROCEDURES = {
     },
     "facet_joint": {
         "name": "Facet joint injection / medial branch block / radiofrequency ablation",
-        "must": ["facet"],
+        "must": ["facet", "medial branch"],
         "any": ["injection", "block", "rhizotomy", "radiofrequency", "ablation"],
     },
     "epidural_steroid_injection": {
@@ -115,9 +116,7 @@ def build_notes() -> pd.DataFrame:
 
     picked = []
     for topic, rule in PROCEDURES.items():
-        mask = pd.Series(True, index=notes.index)
-        for word in rule["must"]:
-            mask &= title.str.contains(word, regex=False)
+        mask = title.apply(lambda t: any(w in t for w in rule["must"]))
         mask &= title.apply(lambda t: any(w in t for w in rule["any"]))
         mask &= notes["transcription"].str.len() >= MIN_NOTE_CHARS
         picked.append(notes[mask].assign(topic=topic))

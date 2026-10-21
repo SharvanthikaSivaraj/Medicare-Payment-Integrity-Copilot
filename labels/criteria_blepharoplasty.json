@@ -1,0 +1,153 @@
+{
+  "procedure": "Blepharoplasty (eyelid surgery)",
+  "lcd_id": "34194",
+  "title": "Blepharoplasty,  Eyelid Surgery, and Brow Lift",
+  "model": "llama3.2:3b",
+  "status": "draft - review by hand",
+  "criteria": [
+    {
+      "id": "BLE-C01",
+      "criterion": "For the purposes of this policy, these surgeries (either individually or in the minimum combination required to achieve a satisfactory surgical outcome) are functional when overhanging skin or upper lid position secondary to dermatochalasis, blepharochalasis, blepharoptosis, or pseudoptosis is sufficiently low to produce a visually-significant field restriction considered by this policy to be approximately 30 degrees or less from fixation.",
+      "type": "indication",
+      "source_quote": "For the purposes of this policy, these surgeries (either individually or in the minimum combination required to achieve a satisfactory surgical outcome) are functional when overhanging skin or upper lid position secondary to dermatochalasis, blepharochalasis, blepharoptosis, or pseudoptosis is sufficiently low to produce a visually-significant field restriction considered by this policy to be approximately 30 degrees or less from fixation.",
+      "keep": true,
+      "reviewer_note": ""
+    },
+    {
+      "id": "BLE-C02",
+      "criterion": "Published literature correlates this amount of field restriction with a Margin Reflex Distance (see below) of 2.0 mm or less.",
+      "type": "indication",
+      "source_quote": "Published literature correlates this amount of field restriction with a Margin Reflex Distance (see below) of 2.0 mm or less.",
+      "keep": true,
+      "reviewer_note": ""
+    },
+    {
+      "id": "BLE-C03",
+      "criterion": "When a noncovered cosmetic surgical procedure is performed in the same operative session as a covered surgical procedure, benefits will be provided for the covered procedure only.",
+      "type": "limitation",
+      "source_quote": "When a noncovered cosmetic surgical procedure is performed in the same operative session as a covered surgical procedure, benefits will be provided for the covered procedure only.",
+      "keep": true,
+      "reviewer_note": ""
+    },
+    {
+      "id": "BLE-C04",
+      "criterion": "Reasonably complete information fulfilling the criteria in Section A (Patient Complaints and Physical Signs), and Section B (Photographs) as delineated below must be adequately documented in the patient\u2019s medical records to demonstrate the reasonableness and necessity of the procedure(s) performed.",
+      "type": "documentation",
+      "source_quote": "Reasonably complete information fulfilling the criteria in Section A (Patient Complaints and Physical Signs), and Section B (Photographs) as delineated below must be adequately documented in the patient\u2019s medical records to demonstrate the reasonableness and necessity of the procedure(s) performed.",
+      "keep": true,
+      "reviewer_note": ""
+    },
+    {
+      "id": "BLE-C05",
+      "criterion": "A functional deficit or disturbance secondary to eyelid and/or brow abnormalities must be documented, such as interference with vision or visual field that impacts an activity of daily living (such as difficulty reading or driving).",
+      "type": "indication",
+      "source_quote": "A functional deficit or disturbance secondary to eyelid and/or brow abnormalities must be documented, such as interference with vision or visual field that impacts an activity of daily living (such as difficulty reading or driving).",
+      "keep": true,
+      "reviewer_note": ""
+    },
+    {
+      "id": "BLE-C06",
+      "criterion": "For Blepharoptosis Repair - A margin reflex distance (MRD sometimes referred to as MRD1)) of 2.0 mm or less.",
+      "type": "limitation",
+      "source_quote": "A margin reflex distance (MRD sometimes referred to as MRD1)) of 2.0 mm or less.",
+      "keep": true,
+      "reviewer_note": ""
+    },
+    {
+      "id": "BLE-C07",
+      "criterion": "For Upper Blepharoplasty and/or Brow Ptosis Repair - Redundant eyelid tissue hanging over the eyelid margin resulting in pseudoptosis where the \u201cpseudo\u201d margin produces a central \u201cpseudo-MRD\u201d of 2.0 mm or less, or",
+      "type": "limitation",
+      "source_quote": "Redundant eyelid tissue hanging over the eyelid margin resulting in pseudoptosis where the \u201cpseudo\u201d margin produces a central \u201cpseudo-MRD\u201d of 2.0 mm or less, or",
+      "keep": true,
+      "reviewer_note": ""
+    },
+    {
+      "id": "BLE-C08",
+      "criterion": "For Upper Blepharoplasty and/or Brow Ptosis Repair - Redundant eyelid tissue predominantly medially or laterally that clearly obscures the line of sight in corresponding gaze.",
+      "type": "limitation",
+      "source_quote": "Redundant eyelid tissue predominantly medially or laterally that clearly obscures the line of sight in corresponding gaze.",
+      "keep": true,
+      "reviewer_note": ""
+    },
+    {
+      "id": "BLE-C09",
+      "criterion": "When requested documentation does not meet the criteria for the service rendered or the documentation does not establish the medical necessity for the services, (i.e., illegible or incomplete) such services will be denied as not reasonable and necessary.",
+      "type": "limitation",
+      "source_quote": "When requested documentation does not meet the criteria for the service rendered or the documentation does not establish the medical necessity for the services, (i.e., illegible or incomplete) such services will be denied as not reasonable and necessary.",
+      "keep": true,
+      "reviewer_note": ""
+    },
+    {
+      "id": "BLE-C10",
+      "criterion": "The \u201cphysical signs\u201d documented in Section A must be clearly represented in photographs of the structures of interest and the photographs must be of good quality and of sufficient size and detail as to make those structures easily recognizable.",
+      "type": "documentation",
+      "source_quote": "The \u201cphysical signs\u201d documented in Section A must be clearly represented in photographs of the structures of interest and the photographs must be of good quality and of sufficient size and detail as to make those structures easily recognizable.",
+      "keep": true,
+      "reviewer_note": ""
+    },
+    {
+      "id": "BLE-C11",
+      "criterion": "Unless medial/lateral gaze is required to demonstrate a specific deficit, photos should be with gaze in the primary position, looking straight ahead.",
+      "type": "documentation",
+      "source_quote": "Unless medial/lateral gaze is required to demonstrate a specific deficit, photos should be with gaze in the primary position, looking straight ahead.",
+      "keep": true,
+      "reviewer_note": ""
+    },
+    {
+      "id": "BLE-C12",
+      "criterion": "Oblique photos are only necessary if needed to better demonstrate a finding not clearly shown by other requested photos.",
+      "type": "documentation",
+      "source_quote": "Oblique photos are only necessary if needed to better demonstrate a finding not clearly shown by other requested photos.",
+      "keep": true,
+      "reviewer_note": ""
+    },
+    {
+      "id": "BLE-C13",
+      "criterion": "Digital or film photographs are acceptable, and may be submitted electronically where possible.",
+      "type": "documentation",
+      "source_quote": "Digital or film photographs are acceptable, and may be submitted electronically where possible.",
+      "keep": true,
+      "reviewer_note": ""
+    },
+    {
+      "id": "BLE-C14",
+      "criterion": "Photographs must be identified with the beneficiary\u2019s name and the date.",
+      "type": "documentation",
+      "source_quote": "Photographs must be identified with the beneficiary\u2019s name and the date.",
+      "keep": true,
+      "reviewer_note": ""
+    },
+    {
+      "id": "BLE-C15",
+      "criterion": "If the eyelid obstructs the pupil, there is a clear-cut indication for surgery.",
+      "type": "indication",
+      "source_quote": "If the eyelid obstructs the pupil, there is a clear-cut indication for surgery.",
+      "keep": true,
+      "reviewer_note": ""
+    },
+    {
+      "id": "BLE-C16",
+      "criterion": "For reference, the colored part of the eye is about 11 mm in diameter, so the distance between the light reflex and the lid would need to be about one fifth that distance or less for the MRD to be 2.0 mm or less.",
+      "type": "limitation",
+      "source_quote": "For reference, the colored part of the eye is about 11 mm in diameter, so the distance between the light reflex and the lid would need to be about one fifth that distance or less for the MRD to be 2.0 mm or less.",
+      "keep": true,
+      "reviewer_note": ""
+    },
+    {
+      "id": "BLE-C17",
+      "criterion": "Two photos are needed:One showing both eyes of the patient at rest demonstrating the above MRD criterion in the more ptotic eye, and another showing both eyes of the patient with the more ptotic eyelid raised to a height restoring a normal visual field, resulting in increased ptosis (meeting the above MRD standard) in the less ptotic eye.",
+      "type": "limitation",
+      "source_quote": "Two photos are needed:One showing both eyes of the patient at rest demonstrating the above MRD criterion in the more ptotic eye, and another showing both eyes of the patient with the more ptotic eyelid raised to a height restoring a normal visual field, resulting in increased ptosis (meeting the above MRD standard) in the less ptotic eye.",
+      "keep": true,
+      "reviewer_note": ""
+    },
+    {
+      "id": "BLE-C18",
+      "criterion": "If both a blepharoplasty and a ptosis repair are planned, both must be individually documented.",
+      "type": "limitation",
+      "source_quote": "If both a blepharoplasty and a ptosis repair are planned, both must be individually documented.",
+      "keep": true,
+      "reviewer_note": ""
+    }
+  ]
+}
