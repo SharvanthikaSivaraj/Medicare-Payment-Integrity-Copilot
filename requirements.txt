@@ -1,0 +1,14 @@
+duckdb
+pandas
+polars
+pyarrow
+requests
+scikit-learn
+lightgbm
+shap
+neo4j
+sentence-transformers
+chromadb
+ollama
+streamlit
+pytest

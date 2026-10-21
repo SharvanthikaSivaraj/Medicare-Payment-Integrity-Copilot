@@ -1,0 +1,22 @@
+# data (downloaded by scripts, never committed)
+data/
+*.parquet
+*.csv
+*.duckdb
+!labels/*.csv
+
+# python
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+.env
+
+# models and outputs
+models/
+*.pkl
+*.joblib
+
+# OS / editor
+.DS_Store
+.vscode/
