@@ -12,3 +12,4 @@ chromadb
 ollama
 streamlit
 pytest
+networkx
